@@ -1,0 +1,9 @@
+<view class="page_hd">
+    <textarea autoHeight bindinput="getContent" maxlength="140" placeholder="分享校园好玩动态(限140个字符)" value="{{content}}" wx:if="{{!showPreview}}"></textarea>
+    <my-uploader bind:ispreview="getShowPreview" bind:updata="updataFiles" maxCount="9"></my-uploader>
+</view>
+
+<view class="page_ft">
+    <!-- <publish content="{{content}}" files="{{files}}" template="{{templateDetailList}}"></publish> -->
+    <button bindtap="onPublish" class="btn-block" loading="{{loading}}">{{loading?'发布中':'发布'}}</button>
+</view>

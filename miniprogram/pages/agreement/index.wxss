@@ -1,0 +1,23 @@
+page {
+    padding: 40rpx;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 28rpx;
+    line-height: 50rpx;
+}
+
+.title {
+    font-size: 32rpx;
+    font-weight: 800;
+    text-align: center;
+    width: 100%;
+    margin-top: 0;
+}
+
+view {
+    height: 60rpx;
+    font-weight: 800rpx;
+    line-height: 60rpx;
+    display: inline-block;
+    margin-top: 20rpx;
+}

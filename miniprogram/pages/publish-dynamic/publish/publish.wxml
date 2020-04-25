@@ -1,0 +1,2 @@
+<button bindtap="onPublish" class="btn-block" loading="{{loading}}">{{loading?'发布中':'发布'}}</button>
+<progress active activeColor="#F8CA00" class="progress" percent="{{allCount/files.length*100}}" wx:if="{{loading&&files.length>0}}"></progress>

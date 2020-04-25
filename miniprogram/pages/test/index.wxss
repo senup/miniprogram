@@ -1,0 +1,15 @@
+/* pages/test/index.wxss */
+@import "../../templates/card/card.wxss";
+
+.card-list-container {
+    width: 100%;
+    padding: 0 40rpx;
+    box-sizing: border-box;
+}
+
+.no-more {
+    margin-bottom: 40rpx;
+    font-size: 24rpx;
+    color: #999;
+    text-align: center;
+}

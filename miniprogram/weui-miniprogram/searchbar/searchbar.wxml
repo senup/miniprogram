@@ -1,0 +1,21 @@
+<view class="weui-search-bar {{extClass}}">
+    <view class="weui-search-bar__form">
+        <view class="weui-search-bar__box">
+            <icon class="weui-icon-search_in-box" size="12" type="search"></icon>
+            <input bindblur="inputBlur" bindfocus="inputFocus" bindinput="inputChange" class="weui-search-bar__input" focus="{{focus}}" placeholder="{{placeholder}}" type="text" value="{{value}}"></input>
+            <view bindtap="clearInput" class="weui-icon-clear" wx:if="{{value.length>0}}">
+                <icon size="12" type="clear"></icon>
+            </view>
+        </view>
+        <label bindtap="showInput" class="weui-search-bar__label" hidden="{{searchState}}">
+            <icon class="weui-icon-search" size="12" type="search"></icon>
+            <view class="weui-search-bar__text">搜索</view>
+        </label>
+    </view>
+    <view bindtap="hideInput" class="weui-search-bar__cancel-btn" wx:if="{{cancel&&searchState}}">{{cancelText}}</view>
+</view>
+<mp-cells class="searchbar-result  {{extClass}}" wx:if="{{searchState&&result.length>0}}">
+    <mp-cell hover bindtap="selectResult" data-index="{{index}}" wx:for="{{result}}" wx:key="index">
+        <view>{{item.name}}</view>
+    </mp-cell>
+</mp-cells>

@@ -1,0 +1,144 @@
+/**app.wxss**/
+/* .container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+}  */
+page {
+    font-family: PingFang SC;
+    color: #333;
+}
+
+button {
+    display: inline-block;
+    padding: 0 14rpx;
+    background-color: #ffd034;
+    font-size: 26rpx;
+    font-weight: 400;
+    line-height: 50rpx;
+    border-radius: 8rpx;
+}
+
+.btn-block {
+    display: block;
+    height: 88rpx;
+    font-size: 32rpx;
+    line-height: 88rpx;
+}
+
+button[loading] {
+    color: rgba(51,51,51,0.6);
+    background-color: #f4be0c;
+}
+
+.btn-icon {
+    background-color: transparent!important;
+}
+
+.button-hover {
+    background-color: rgba(255,208,52,0.8);
+    color: #666;
+}
+
+button::after {
+    border: none;
+}
+
+@font-face {
+    font-family:'iconfont';src:url('//at.alicdn.com/t/font_1427328_0kb3zzc3xv1k.eot');src:url('//at.alicdn.com/t/font_1427328_0kb3zzc3xv1k.eot?#iefix') format('embedded-opentype'),url('//at.alicdn.com/t/font_1427328_0kb3zzc3xv1k.woff2') format('woff2'),url('//at.alicdn.com/t/font_1427328_0kb3zzc3xv1k.woff') format('woff'),url('//at.alicdn.com/t/font_1427328_0kb3zzc3xv1k.ttf') format('truetype'),url('//at.alicdn.com/t/font_1427328_0kb3zzc3xv1k.svg#iconfont') format('svg');
+}
+
+.iconfont {
+    font-family: "iconfont"!important;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-address:before {
+    content: "\e61f";
+}
+
+.icon-edit:before {
+    content: "\e66c";
+}
+
+.icon-arrow-up:before {
+    content: "\e63c";
+}
+
+.icon-arrow-down:before {
+    content: "\e63b";
+}
+
+.icon-arrow-right:before {
+    content: "\e60e";
+}
+
+.icon-arrow-right-bold:before {
+    content: "\e63e";
+}
+
+.icon-go-top:before {
+    content: "\e6b6";
+}
+
+.icon-good:before {
+    content: "\e60d";
+}
+
+.icon-reply:before {
+    content: "\e612";
+}
+
+.icon-share:before {
+    content: "\e72f";
+}
+
+.icon-phone:before {
+    content: "\e606";
+}
+
+.icon-close:before {
+    content: "\e603";
+}
+
+.icon-drop-down:before {
+    content: "\e608";
+}
+
+.icon-delete:before {
+    content: "\e617";
+}
+
+.icon-warning:before {
+    content: "\e605";
+}
+
+.icon-share2:before {
+    content: "\e7cd";
+}
+
+.icon-contact:before {
+    content: "\e636";
+}
+
+.icon-change:before {
+    content: "\e62a";
+}
+
+.icon-setting:before {
+    content: "\e633";
+}
+
+.icon-microphone:before {
+    content: "\e63a";
+}
+
+.icon-picture:before {
+    content: "\e75d";
+}

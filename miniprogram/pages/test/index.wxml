@@ -1,0 +1,85 @@
+<!--pages/test/index.wxml-->
+<import src="/templates/card/card.wxml"></import>
+<import src="/templates/public/public.wxml"></import>
+<view class="card-list-container">
+    <view bindtap="goDetail" class="card" data-id="{{id}}">
+        <!-- <template is="userInfo" data="{{...userInfo}}"></template> -->
+		<view class="info-box">
+		    <view class="info-avatar">
+		        <image catchtap="goPersonalCenter" class="info-avatar-image" data-uid="{{userId}}" src="https://dss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1305353222,2352820043&fm=26&gp=0.jpg"></image>
+		        <image class="image-renzhen" src="/images/public/yirenzhen.png" wx:if="{{idauth}}"></image>
+		    </view>
+		    <view class="info-detail">
+		        <view class="info-detail-nickname">
+		    康学涛
+		    <view class="info-detail-official" wx:if="{{official==true}}">官方</view>
+		            <block wx:else>
+		                <image class="image-gender" src="/images/public/boy.png" wx:if="{{sex==0}}"></image>
+		                <image class="image-gender" src="/images/public/girl.png" wx:else></image>
+		            </block>
+		        </view>
+		        <view>
+		            <view class="info-detail-time">2020-02-02</view>
+		            <view class="info-detail-school" wx:if="{{!official}}">韩山师范学院2017级</view>
+		        </view>
+		    </view>
+		</view>
+		<!-- 结束 -->
+        <view class="flag flag-green" >新发布</view>
+</view>
+        <view class="card-image-grid" wx:if="{{images}}">
+            <image mode="aspectFill" src="{{item}}" wx:for="{{images}}" wx:key="index"></image>
+        </view>
+        <view class="panel-box">
+            <view class="panel-title">
+                <view class="panel-title-text">任务</view>
+                <view class="panel-title-amount">￥3</view>
+            </view>
+            <view class="panel-main">
+                <view class="panel-main-other">在线求帮助</view>
+            </view>
+        </view>
+        <view class="card-btn-group">
+            <button catchtap="onClickGood" class="btn-icon" data-id="{{id}}" data-index="{{index}}" data-like="{{like}}">
+                <text class="iconfont icon-good {{like?'active':''}}"></text>5
+      </button>
+            <button catchtap="goDetail" class="btn-icon" data-comment="true" data-id="{{id}}">
+                <text class="iconfont icon-reply"></text>3
+      </button>
+            <button catchtap="false" class="btn-icon" data-id="{{id}}" data-index="{{index}}" data-type="{{type}}" openType="share">
+                <text class="iconfont icon-share"></text>
+            </button>
+        </view>
+    </view>
+	
+    <template is="loading" data wx:if="{{isLoading}}"></template>
+    <!-- <view class="no-more" hidden="{{!isNoMore||arrow.length==0}}">人家也是有底线的~</view> -->
+    <view class="no-more" >人家也是有底线的~</view>
+<view>--------------------------------------------</view>
+
+
+<view class="card-list-container">
+    <view class="info-box">
+        <view class="info-avatar">
+            <image catchtap="goPersonalCenter" class="info-avatar-image" data-uid="{{userId}}" src="https://dss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1305353222,2352820043&fm=26&gp=0.jpg"></image>
+            <image class="image-renzhen" src="/images/public/yirenzhen.png" wx:if="{{idauth}}"></image>
+        </view>
+        <view class="info-detail">
+            <view class="info-detail-nickname">
+        {{nickname}}
+        <view class="info-detail-official" wx:if="{{official==true}}">官方</view>
+                <block wx:else>
+                    <image class="image-gender" src="/images/public/boy.png" wx:if="{{sex==0}}"></image>
+                    <image class="image-gender" src="/images/public/girl.png" wx:else></image>
+                </block>
+            </view>
+            <view>
+                <view class="info-detail-time">{{datetime}}</view>
+                <view class="info-detail-school" wx:if="{{!official}}">{{college}}{{grade}}级</view>
+            </view>
+        </view>
+    </view>
+
+    
+</view>
+

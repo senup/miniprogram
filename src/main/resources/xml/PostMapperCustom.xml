@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.senup.miniprogram.mapper.PostMapperCustom">
+    <resultMap id="UserPostImgMap" type="com.senup.miniprogram.vo.PostVo">
+        <id column="id" property="id"></id>
+        <result column="from_id" property="fromId"></result>
+        <result column="content" property="content"></result>
+        <result column="create_time" property="createTime"></result>
+        <result column="like_count" property="likeCount"></result>
+        <result column="status" property="status"></result>
+        <result column="comment_count" property="commentCount"></result>
+        <association property="user" javaType="com.senup.miniprogram.entity.User">
+            <id column="user_id" property="id"></id>
+            <result column="nickname" property="nickName"></result>
+            <result column="avatar_url" property="avatarUrl"></result>
+            <result column="gender" property="gender"></result>
+            <result column="follow_counts" property="followCounts"></result>
+            <result column="fans_counts" property="fansCounts"></result>
+            <result column="receive_like_counts" property="receiveLikeCounts"></result>
+            <result column="create_time" property="createTime"></result>
+            <result column="grade" property="grade"></result>
+            <result column="intro" property="intro"></result>
+        </association>
+        <collection ofType="com.senup.miniprogram.entity.Img" property="imgs">
+            <id column="img_id" property="id"></id>
+            <result column="post_id" property="postId"></result>
+            <result column="img_path" property="imgPath"></result>
+        </collection>
+    </resultMap>
+    
+    <select id="queryPostDetail" resultMap="UserPostImgMap">
+        SELECT p.*,u.*,i.*,i.id as img_id,u.id as user_id
+        FROM post as p
+        left join user  as u on p.from_id = u.id
+        left join img as i on p.id = i.post_id
+    </select>
+
+</mapper>
+
+
+

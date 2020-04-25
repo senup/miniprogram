@@ -1,0 +1,32 @@
+<view class="page_hd">
+    <view class="no-user-info" wx:if="{{!isLogin}}">
+        <view>探索未知~</view>
+        <button catchtap="goToAuthorization">登陆/注册</button>
+    </view>
+    <view class="user-info" wx:else>
+        <view class="user-info-nickname">
+      {{nickname}}
+      <image class="gender-image" src="/images/public/boy.png" wx:if="{{sex==1}}"></image>
+            <image class="gender-image" src="/images/public/girl.png" wx:if="{{sex==0}}"></image>
+        </view>
+        <view class="user-info-school">{{college}}{{grade}}</view>
+    </view>
+    <view class="user-image">
+        <image src="/images/my/icon-image.png" wx:if="{{!isLogin}}"></image>
+        <image catchtap="previewAvatar" data-url="{{avatarUrl}}" src="{{avatarUrl}}" wx:else></image>
+        <image class="renzhen" src="/images/public/yirenzhen.png" wx:if="{{idauth}}"></image>
+    </view>
+</view>
+<view class="page_bd">
+    <view bindtap="onClickCell" class="cell" data-index="{{index}}" wx:if="{{item.show}}" wx:for="{{cellList}}" wx:key="index">
+        <image src="{{item.image}}"></image>
+        <view>{{item.value}}</view>
+        <view class="new" wx:if="{{item.isNew}}">NEW</view>
+        <text class="iconfont icon-arrow-right" wx:if="{{item.isNavigate}}"></text>
+    </view>
+    <view catchtap="logout" class="cell logout" wx:if="{{isLogin}}">
+        <image src="/images/my/login-out.png"></image>
+        <view>退出登录</view>
+    </view>
+</view>
+<tab-bar isMore="{{tabBarMore}}" selected="1"></tab-bar>

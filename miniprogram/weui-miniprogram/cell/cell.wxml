@@ -1,0 +1,45 @@
+<view bindtap="navigateTo" class="weui-cell weui-cell_access {{extClass}} {{outerClass}}{{inForm?' weui-cell-inform':''}}{{inline?'':' .weui-cell_label-block'}}" hoverClass="{{hover?'weui-cell_active':''}}" wx:if="{{link}}">
+    <view class="weui-cell__hd {{iconClass}}" wx:if="{{hasHeader}}">
+        <image class="weui-cell__icon" mode="aspectFit" src="{{icon}}" wx:if="{{icon}}"></image>
+        <slot name="icon" wx:else></slot>
+        <block wx:if="{{inForm}}">
+            <view class="weui-label" wx:if="{{title}}">{{title}}</view>
+            <slot name="title" wx:else></slot>
+        </block>
+        <block wx:else>
+            <block wx:if="{{title}}">{{title}}</block>
+            <slot name="title" wx:else></slot>
+        </block>
+    </view>
+    <view class="weui-cell__bd" wx:if="{{hasBody}}">
+        <block wx:if="{{value}}">{{value}}</block>
+        <slot wx:else></slot>
+    </view>
+    <view class="weui-cell__ft weui-cell__ft_in-access {{footerClass}}" wx:if="{{hasFooter}}">
+        <block wx:if="{{footer}}">{{footer}}</block>
+        <slot name="footer" wx:else></slot>
+    </view>
+</view>
+<view bindtap="navigateTo" class="weui-cell {{showError&&error?'weui-cell_warn':''}} {{inForm?'weui-cell-inform':''}} {{extClass}} {{outerClass}}" hoverClass="{{hover?'weui-cell_active':''}}" wx:else>
+    <view class="weui-cell__hd {{iconClass}}" wx:if="{{hasHeader}}">
+        <image class="weui-cell__icon" mode="aspectFit" src="{{icon}}" wx:if="{{icon}}"></image>
+        <slot name="icon" wx:else></slot>
+        <block wx:if="{{inForm}}">
+            <view class="weui-label" wx:if="{{title}}">{{title}}</view>
+            <slot name="title" wx:else></slot>
+        </block>
+        <block wx:else>
+            <block wx:if="{{title}}">{{title}}</block>
+            <slot name="title" wx:else></slot>
+        </block>
+    </view>
+    <view class="weui-cell__bd {{bodyClass}}" wx:if="{{hasBody}}">
+        <block wx:if="{{value}}">{{value}}</block>
+        <slot wx:else></slot>
+    </view>
+    <view class="weui-cell__ft {{footerClass}}" wx:if="{{hasFooter}}">
+        <block wx:if="{{footer}}">{{footer}}</block>
+        <slot name="footer" wx:else></slot>
+        <icon color="#E64340" size="23" type="warn" wx:if="{{showError&&error}}"></icon>
+    </view>
+</view>
