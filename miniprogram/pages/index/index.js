@@ -29,18 +29,15 @@ Page({
     couponShow: false,
     tabBarMore: false,
     floorstatus: false,
-    defaultBanners: [{
-      imgUrl: "/images/index/banner2.jpg"
-    }, {
-      imgUrl: "/images/index/banner4.jpg"
-    }],
+    defaultBanners: [
+      { imgUrl: "/images/index/welcome.png" }, 
+      { imgUrl: "/images/index/read.png" }, 
+      { imgUrl: "/images/index/photo.png" }
+    ],
 // ----------------------
     cardList:[{
       type:11,
-      images: ["https://dss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=218375221,1552855610&fm=111&gp=0.jpg",
-      "https://dss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=218375221,1552855610&fm=111&gp=0.jpg",
-        "https://dss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=218375221,1552855610&fm=111&gp=0.jpg",
-      "https://dss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=218375221,1552855610&fm=111&gp=0.jpg"],
+      images: [],
       content: "在綫求幫助！！！",
       likeCount: 6,
       commentCount: 8,

@@ -3,7 +3,6 @@
 <import src="/templates/public/public.wxml"></import>
 <view class="card-list-container">
     <view bindtap="goDetail" class="card" data-id="{{id}}">
-        <!-- <template is="userInfo" data="{{...userInfo}}"></template> -->
 		<view class="info-box">
 		    <view class="info-avatar">
 		        <image catchtap="goPersonalCenter" class="info-avatar-image" data-uid="{{userId}}" src="https://dss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1305353222,2352820043&fm=26&gp=0.jpg"></image>

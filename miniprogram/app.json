@@ -1,11 +1,11 @@
 {
   "pages": [
-    "pages/my/index",
-    "pages/publish-dynamic/index",
-    "pages/test2/test2",
-    "pages/test/index",
-    "pages/blog-edit/blog-edit",
     "pages/index/index",
+    "pages/test/index",
+    "pages/my/index",
+    "pages/test2/test2",
+    "pages/publish-dynamic/index",
+    "pages/blog-edit/blog-edit",
     "pages/login/index",
     "pages/edit-complete-info/index",
     "pages/personal-center/index",
