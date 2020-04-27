@@ -71,9 +71,9 @@
 </template>
 <template name="cardDynamic">
     <view bindtap="goDetail" class="card" data-id="{{id}}">
-        <template is="userInfo" data="{{...userInfo}}"></template>
-        <view class="card-image-grid" wx:if="{{images}}">
-            <image mode="aspectFill" src="{{item}}" wx:for="{{images}}" wx:key="index"></image>
+        <template is="userInfo" data="{{...user,datetime:createTime}}"></template>
+        <view class="card-image-grid" wx:if="{{imgs}}">
+            <image mode="aspectFill" src="http://localhost:8080{{item.imgPath}}" wx:for="{{imgs}}" wx:key="index"></image>
         </view>
         <view class="card-dynamic-text" wx:if="{{content}}">{{content}}</view>
         <view class="card-btn-group">

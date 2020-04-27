@@ -18,7 +18,7 @@ public class testMybatis {
     private PostMapperCustom postMapperCustom;
     @Test
     public void test1(){
-        IPage<PostVo> page=new Page<>(1,10);
+        IPage<PostVo> page=new Page<>(1,15);
         Page<PostVo> postVoPage = postMapperCustom.queryPostDetail(page);
         System.out.println("hasNext="+postVoPage.hasNext());
         System.out.println("hasPrevious="+postVoPage.hasPrevious());

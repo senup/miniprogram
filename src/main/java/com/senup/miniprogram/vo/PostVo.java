@@ -58,5 +58,10 @@ public class PostVo implements Serializable {
     @ApiModelProperty(value = "评论数")
     private Integer commentCount;
 
+    @ApiModelProperty(value = "帖子类型")
+    private Integer type;
+
+    @ApiModelProperty(value = "酬金")
+    private float price;
 
 }

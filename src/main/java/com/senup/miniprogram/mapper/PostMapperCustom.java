@@ -5,6 +5,7 @@ import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.senup.miniprogram.vo.PostVo;
 import org.apache.ibatis.annotations.Param;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
@@ -16,6 +17,7 @@ import java.util.List;
  * @author 涛哥
  * @since 2020-04-07
  */
+@Repository
 public interface PostMapperCustom extends BaseMapper<PostVo> {
 //    List<PostVo> queryPostDetail();
 

@@ -37,15 +37,15 @@
 <template name="userInfo">
     <view class="info-box">
         <view class="info-avatar">
-            <image catchtap="goPersonalCenter" class="info-avatar-image" data-uid="{{userId}}" src="{{avatarUrl}}"></image>
+            <image catchtap="goPersonalCenter" class="info-avatar-image" data-uid="{{id}}" src="{{avatarUrl}}"></image>
             <image class="image-renzhen" src="/images/public/yirenzhen.png" wx:if="{{idauth}}"></image>
         </view>
         <view class="info-detail">
             <view class="info-detail-nickname">
-        {{nickname}}
+        {{nickName}}
         <view class="info-detail-official" wx:if="{{official==true}}">官方</view>
                 <block wx:else>
-                    <image class="image-gender" src="/images/public/boy.png" wx:if="{{sex==0}}"></image>
+                    <image class="image-gender" src="/images/public/boy.png" wx:if="{{gender==1}}"></image>
                     <image class="image-gender" src="/images/public/girl.png" wx:else></image>
                 </block>
             </view>

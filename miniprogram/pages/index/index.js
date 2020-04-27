@@ -4,7 +4,7 @@ const app = getApp()
 
 Page({
   data: {
-
+    serverUrl: "",
     typeList: [{
       id: 0,
       name: "全部"
@@ -29,82 +29,57 @@ Page({
     couponShow: false,
     tabBarMore: false,
     floorstatus: false,
-    defaultBanners: [
-      { imgUrl: "/images/index/welcome.png" }, 
-      { imgUrl: "/images/index/read.png" }, 
-      { imgUrl: "/images/index/photo.png" }
-    ],
-// ----------------------
-    cardList:[{
-      type:11,
-      images: [],
-      content: "在綫求幫助！！！",
-      likeCount: 6,
-      commentCount: 8,
-      nickname:"高等遊民",
-      official:true,
-      sex:0,
-      datatime:"2020-20-20",
-      college:"韓山師範學院",
-      grade:"2017",
-      userInfo:{
-        avatarUrl:"https://dss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=218375221,1552855610&fm=111&gp=0.jpg",
-        idauth: true,
-        content: "在綫求幫助！！！",
-        likeCount: 6,
-        commentCount: 8,
-        nickname: "高等遊民",
-        official: false,
-        sex: 0,
-        datatime: "2020-20-20",
-        college: "韓山師範學院",
-        grade: "2017"}
-    },
+    defaultBanners: [{
+        imgUrl: "/images/index/welcome.png"
+      },
       {
-        type: 11,
-        images: ["https://dss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=218375221,1552855610&fm=111&gp=0.jpg",
-          "https://dss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=218375221,1552855610&fm=111&gp=0.jpg",
-          "https://dss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=218375221,1552855610&fm=111&gp=0.jpg",
-          "https://dss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=218375221,1552855610&fm=111&gp=0.jpg"],
-        content: "在綫求幫助！！！",
-        likeCount: 6,
-        commentCount: 8,
-        nickname: "高等遊民",
-        official: true,
-        sex: 0,
-        datatime: "2020-20-20",
-        college: "韓山師範學院",
-        grade: "2017",
-        userInfo: {
-          avatarUrl: "https://dss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=218375221,1552855610&fm=111&gp=0.jpg",
-          idauth: true,
-          content: "在綫求幫助！！！",
-          likeCount: 6,
-          commentCount: 8,
-          nickname: "高等遊民",
-          official: false,
-          sex: 0,
-          datatime: "2020-20-20",
-          college: "韓山師範學院",
-          grade: "2017"
-        }
+        imgUrl: "/images/index/read.png"
+      },
+      {
+        imgUrl: "/images/index/photo.png"
       }
     ],
-    loading:true,
+    // ----------------------
+    cardList: [],
+    loading: true,
     isNoMore: true,
 
 
   },
   //function
-  swiperchange: function (e) {
+  onLoad: function() {
+    // 调用后端
+    var me = this;
+    var user = app.getGlobalUserInfo();
+    var serverUrl = app.serverUrl;
+    wx.request({
+      url: serverUrl + '/post/postDetail',
+      method: "GET",
+      header: {
+        'content-type': 'application/json', // 默认值
+        'userId': user.id,
+        'userToken': user.userToken
+      },
+      success: function(res) {
+        console.log(res);
+        var results = res.data.data;
+        console.log(results);
+        me.setData({
+          cardList: results,
+          serverUrl:serverUrl
+        })
+      },
+    })
+  },
+  swiperchange: function(e) {
     this.setData({
       swiperCurrent: e.detail.current
     });
   },
-  goTop: function () {
+  goTop: function() {
     wx.pageScrollTo({
       scrollTop: 0
-    }) ;
+    });
   }
 
 })
