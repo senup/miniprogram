@@ -1,5 +1,7 @@
 package com.senup.miniprogram.service.impl;
 
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.senup.miniprogram.mapper.PostMapperCustom;
 import com.senup.miniprogram.service.IPostServiceCustom;
@@ -16,5 +18,10 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class PostServiceCustom extends ServiceImpl<PostMapperCustom, PostVo> implements IPostServiceCustom {
+
+    public Page<PostVo> testpage(Page<PostVo> page, QueryWrapper<PostVo> wrapper) {
+        return page.setRecords(baseMapper.testpage(page, wrapper));
+    }
+
 
 }

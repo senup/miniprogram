@@ -31,15 +31,23 @@
     </resultMap>
     
     <select id="queryPostDetail" resultMap="UserPostImgMap">
-        SELECT p.*,u.*,i.*,i.id as img_id,u.id as user_id
+      SELECT p.*,u.*,i.*,i.id as img_id,u.id as user_id
         FROM post as p
+         join img as i on p.id = i.post_id
         left join user  as u on p.from_id = u.id
 
-        left join img as i on p.id = i.post_id
 
+    </select>
 
+    <select id="testpage" resultMap="UserPostImgMap">
+        SELECT p.*,u.*,i.*,i.id as img_id,u.id as user_id
+        FROM post as p,user  as u,img as i
+        where p.from_id = u.id
+        and p.id = i.post_id
         and p.status=0
         order by p.create_time desc
+
+
     </select>
 
 </mapper>

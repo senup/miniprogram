@@ -1,8 +1,12 @@
 package com.senup.miniprogram;
 
+import com.alibaba.fastjson.JSONObject;
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.senup.miniprogram.mapper.PostMapperCustom;
+import com.senup.miniprogram.service.impl.PostServiceCustom;
 import com.senup.miniprogram.vo.PostVo;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -16,9 +20,11 @@ import java.util.List;
 public class testMybatis {
     @Autowired
     private PostMapperCustom postMapperCustom;
+    @Autowired
+    private PostServiceCustom postServiceCustom;
     @Test
     public void test1(){
-        IPage<PostVo> page=new Page<>(1,15);
+        IPage<PostVo> page=new Page<>(2,5);
         Page<PostVo> postVoPage = postMapperCustom.queryPostDetail(page);
         System.out.println("hasNext="+postVoPage.hasNext());
         System.out.println("hasPrevious="+postVoPage.hasPrevious());
@@ -32,6 +38,23 @@ public class testMybatis {
         for (PostVo v:records) {
             System.out.println(v.toString());
             
+        }
+    }
+
+
+    @Test
+    public void test2(){
+        QueryWrapper wrapper = Wrappers.<PostVo>query();
+        Page<PostVo> page = postServiceCustom.testpage(new Page<>(1,10), wrapper);
+//        System.out.println("hasNext="+page.hasNext());
+//        System.out.println("hasPrevious="+page.hasPrevious());
+//        System.out.println("getTotal="+page.getTotal());
+//        System.out.println("getCurrent="+page.getCurrent());
+//        System.out.println("getSize="+page.getSize());
+        List<PostVo> records = page.getRecords();
+        for (PostVo v:records) {
+            System.out.println(v.toString());
+
         }
     }
 }
