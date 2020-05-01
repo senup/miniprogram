@@ -31,34 +31,26 @@
     </resultMap>
     
     <select id="queryPostDetail" resultMap="UserPostImgMap">
-      SELECT p.*,u.*,i.*,i.id as img_id,u.id as user_id
-        FROM post as p
-        left join img as i on p.id = i.post_id
-        left join user  as u on p.from_id = u.id
-        where 1=1
-        and p.status=0
-        order by p.create_time desc
-
+      select
+      post.*,
+      user.id user_id,
+      user.nickname,
+      user.avatar_url,
+      user.gender,
+      user.follow_counts,
+      user.fans_counts,
+      user.receive_like_counts,
+      user.grade,
+      img.id img_id,
+      img.post_id,
+      img.img_path
+      from post
+        left join img on post.id = img.post_id
+        left join user  on post.from_id = user.id
+      and post.status=0
+      order by post.create_time desc
     </select>
 
-    <select id="testpage" resultMap="UserPostImgMap">
-        SELECT p.*,u.*,i.*,i.id as img_id,u.id as user_id
-        FROM post as p,user  as u,img as i
-        where p.from_id = u.id
-        and p.id = i.post_id
-        and p.status=0
-        order by p.create_time desc
-    </select>
-
-    <select id="queryAllPosts" resultMap="UserPostImgMap">
-      SELECT p.*,u.*,i.*,i.id as img_id,u.id as user_id
-        FROM post as p
-        left join img as i on p.id = i.post_id
-        left join user  as u on p.from_id = u.id
-        where 1=1
-        and p.status=0
-        order by p.create_time desc
-    </select>
 
 </mapper>
 

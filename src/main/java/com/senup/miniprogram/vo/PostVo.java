@@ -64,4 +64,20 @@ public class PostVo implements Serializable {
     @ApiModelProperty(value = "酬金")
     private float price;
 
+    @Override
+    public String toString() {
+        return "PostVo{" +
+                "id=" + id +
+                ", imgs=" + imgs +
+                ", user=" + user +
+                ", fromId='" + fromId + '\'' +
+                ", content='" + content + '\'' +
+                ", createTime=" + createTime +
+                ", likeCount=" + likeCount +
+                ", status=" + status +
+                ", commentCount=" + commentCount +
+                ", type=" + type +
+                ", price=" + price +
+                '}';
+    }
 }

@@ -43,27 +43,42 @@ public class testMybatis {
     }
 
 
-    @Test
-    public void test2(){
-        QueryWrapper wrapper = Wrappers.<PostVo>query();
-        Page<PostVo> page = postServiceCustom.testpage(new Page<>(1,10), wrapper);
-//        System.out.println("hasNext="+page.hasNext());
-//        System.out.println("hasPrevious="+page.hasPrevious());
-//        System.out.println("getTotal="+page.getTotal());
-//        System.out.println("getCurrent="+page.getCurrent());
-//        System.out.println("getSize="+page.getSize());
-        List<PostVo> records = page.getRecords();
-        for (PostVo v:records) {
-            System.out.println(v.toString());
+//    @Test
+//    public void test2(){
+//        QueryWrapper wrapper = Wrappers.<PostVo>query();
+//        Page<PostVo> page = postServiceCustom.testpage(new Page<>(1,10), wrapper);
+////        System.out.println("hasNext="+page.hasNext());
+////        System.out.println("hasPrevious="+page.hasPrevious());
+////        System.out.println("getTotal="+page.getTotal());
+////        System.out.println("getCurrent="+page.getCurrent());
+////        System.out.println("getSize="+page.getSize());
+//        List<PostVo> records = page.getRecords();
+//        for (PostVo v:records) {
+//            System.out.println(v.toString());
+//
+//        }
+//    }
 
+
+//    @Test
+//    public void test3(){
+//        PagedResult posts = postServiceCustom.getAllPosts(1, 5);
+//        System.out.println(posts.toString());
+//        System.out.println(posts.getRows());
+//    }
+
+
+
+
+
+    @Test
+    public void test4(){
+        IPage<PostVo> page=new Page<>(1,3);
+        Page<PostVo> postVoPage = postMapperCustom.queryPostDetail(page);
+        List<PostVo> records = postVoPage.getRecords();
+        for (PostVo r:records
+             ) {
+            System.out.println(r);
         }
-    }
-
-
-    @Test
-    public void test3(){
-        PagedResult posts = postServiceCustom.getAllPosts(1, 5);
-        System.out.println(posts.toString());
-        System.out.println(posts.getRows());
     }
 }

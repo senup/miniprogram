@@ -15,7 +15,7 @@ import com.senup.miniprogram.vo.PostVo;
  * @since 2020-04-07
  */
 public interface IPostServiceCustom extends IService<PostVo> {
-    Page<PostVo> testpage(Page<PostVo> page, QueryWrapper<PostVo> wrapper);
+//    Page<PostVo> testpage(Page<PostVo> page, QueryWrapper<PostVo> wrapper);
 
-    PagedResult getAllPosts(Integer page,Integer size);
+
 }

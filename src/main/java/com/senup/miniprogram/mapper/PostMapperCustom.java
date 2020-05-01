@@ -22,10 +22,10 @@ import java.util.List;
 @Repository
 public interface PostMapperCustom extends BaseMapper<PostVo> {
 //    List<PostVo> queryPostDetail();
-    List<PostVo> queryAllPosts();
+//    List<PostVo> queryAllPosts();
 
     Page<PostVo> queryPostDetail(IPage<PostVo> pagination);
 
-    List<PostVo> testpage(Page page, @Param(Constants.WRAPPER) QueryWrapper<PostVo> wrapper);
+//    List<PostVo> testpage(Page page, @Param(Constants.WRAPPER) QueryWrapper<PostVo> wrapper);
 
 }
