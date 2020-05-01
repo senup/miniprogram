@@ -1,0 +1,8 @@
+<view class="page_bd" wx:if="{{type=='nickname'}}">
+    <input bindinput="inputNickname" maxlength="10" placeholder="请输入昵称,最大长度10字符" value="{{nickname}}"></input>
+    <button bindtap="saveNickname" class="btn-block" disabled="{{!nickname}}">保存</button>
+</view>
+<view class="page_bd" wx:if="{{type=='intro'}}">
+    <textarea bindinput="inputIntro" maxlength="80" placeholder="这个人很懒，什么都没说" value="{{intro}}"></textarea>
+    <button bindtap="saveIntro" class="btn-block">保存</button>
+</view>

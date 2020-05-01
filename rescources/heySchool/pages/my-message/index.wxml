@@ -1,0 +1,22 @@
+<import src="/templates/public/public.wxml"></import>
+<view class="page_bd">
+    <view bindtap="goDetial" class="message-item" data-id="{{item.targetId}}" wx:for="{{msgList}}" wx:key="index">
+        <image class="message-item-avatar" src="{{item.avatarUrl}}"></image>
+        <view class="message-item-info">
+            <view class="message-item-info-title">
+                <text class="message-item-info-title-name">{{item.nickname}}</text>
+                <text wx:if="{{item.msgType=='comment'}}">评论了你</text>
+                <text wx:if="{{item.msgType=='reply'}}">回复了你</text>
+            </view>
+            <view class="message-item-info-detial">{{item.content}}</view>
+            <view class="message-item-info-time">{{item.datetime}}</view>
+        </view>
+        <view class="message-item-original">
+            <view class="message-item-original-content" wx:if="{{item.imgContent}}">{{item.imgContent}}</view>
+            <image class="message-item-original-image" mode="aspectFill" src="{{item.imgUrl}}" wx:if="{{item.imgUrl}}"></image>
+        </view>
+    </view>
+    <template is="loading" data wx:if="{{loading}}"></template>
+    <view class="no-more" wx:if="{{msgList.length==0}}">暂无消息</view>
+    <view class="no-more" hidden="{{!isNoMore||msgList.length==0}}">暂无更多消息</view>
+</view>

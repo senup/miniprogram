@@ -22,6 +22,7 @@ import java.util.List;
 @Repository
 public interface PostMapperCustom extends BaseMapper<PostVo> {
 //    List<PostVo> queryPostDetail();
+    List<PostVo> queryAllPosts();
 
     Page<PostVo> queryPostDetail(IPage<PostVo> pagination);
 

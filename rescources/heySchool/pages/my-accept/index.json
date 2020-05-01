@@ -1,0 +1,7 @@
+{
+    "navigationBarTitleText": "我的接单",
+    "usingComponents": {
+        "card-list": "/components/cardList/cardList"
+    },
+    "enablePullDownRefresh": true
+}

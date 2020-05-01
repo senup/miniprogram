@@ -1,0 +1,63 @@
+<template name="statement-item">
+    <view class="statement-item">
+        <view>
+            <view class="statement-item-title" wx:if="{{transRecordType==0}}">支付任务赏金</view>
+            <view class="statement-item-title" wx:elif="{{transRecordType==1}}">退回任务赏金</view>
+            <view class="statement-item-title" wx:elif="{{transRecordType==2}}">任务赏金收入</view>
+            <view class="statement-item-title" wx:elif="{{transRecordType==3}}">余额充值</view>
+            <view class="statement-item-title" wx:elif="{{transRecordType==4}}">余额提现</view>
+            <view class="statement-item-time">{{datetime}}</view>
+        </view>
+        <view class="statement-item-minus" wx:if="{{transRecordType==0||transRecordType==4}}">
+      -{{amount}}
+    </view>
+        <view class="statement-item-add" wx:if="{{transRecordType==1||transRecordType==2||transRecordType==3}}">
+      +{{amount}}
+    </view>
+    </view>
+</template>
+<template name="coupons-item">
+    <view class="coupons-item">
+        <view>
+            <view class="coupons-item-sum" wx:if="{{type==1}}">￥{{discountAmount}}</view>
+            <view class="coupons-item-discount" wx:if="{{type==2}}">{{discountPrecent*0.1}}折</view>
+            <view class="coupons-item-label" wx:if="{{discountThreshold}}">发布满{{discountThreshold}}元可用</view>
+            <view class="coupons-item-label" wx:else>无门槛抵用券</view>
+        </view>
+        <view>
+            <button bindtap="goUserCoupon" data-index="{{index}}">去使用</button>
+        </view>
+    </view>
+</template>
+<view class="page_hd">
+    <view class="card-container">
+        <view class="card-container-title">钱包余额</view>
+        <view class="card-container-balance">￥{{amount}}</view>
+        <view class="card-container-footer">
+      你已经在HeyU累计赚取{{rewardTotal}}元啦！
+      <button bindtap="goWithdrawal">提现</button>
+        </view>
+    </view>
+</view>
+<view class="page_bd">
+    <view class="wallet-navbar">
+        <view bindtap="navbarClick" class="wallet-navbar-item {{tabCurrent=='1'?'wallet-navbar-item-active':''}}" data-id="1">优惠券</view>
+        <view bindtap="navbarClick" class="wallet-navbar-item {{tabCurrent=='2'?'wallet-navbar-item-active':''}}" data-id="2">账户明细</view>
+    </view>
+    <view class="wallet-content" wx:if="{{tabCurrent=='1'}}">
+        <view class="default" wx:if="{{couponList.length==0}}">
+            <image class="default-image" src="{{baseImageUrl}}static/my/default_yhq.png"></image>
+        </view>
+        <view class="coupons-items">
+            <template is="coupons-item" data="{{...item,index:index}}" wx:for="{{couponList}}" wx:key="index"></template>
+        </view>
+    </view>
+    <view class="wallet-content" wx:elif="{{tabCurrent=='2'}}">
+        <view class="default" wx:if="{{statementList.length==0}}">
+            <image class="default-image" src="{{baseImageUrl}}static/my/default_zd.png"></image>
+        </view>
+        <view>
+            <template is="statement-item" data="{{...item}}" wx:for="{{statementList}}" wx:key="index"></template>
+        </view>
+    </view>
+</view>

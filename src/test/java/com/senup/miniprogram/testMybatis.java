@@ -7,6 +7,7 @@ import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.senup.miniprogram.mapper.PostMapperCustom;
 import com.senup.miniprogram.service.impl.PostServiceCustom;
+import com.senup.miniprogram.utils.PagedResult;
 import com.senup.miniprogram.vo.PostVo;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -56,5 +57,13 @@ public class testMybatis {
             System.out.println(v.toString());
 
         }
+    }
+
+
+    @Test
+    public void test3(){
+        PagedResult posts = postServiceCustom.getAllPosts(1, 5);
+        System.out.println(posts.toString());
+        System.out.println(posts.getRows());
     }
 }

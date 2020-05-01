@@ -1,0 +1,13 @@
+.page_bd {
+    padding: 40rpx;
+}
+
+input {
+    margin-bottom: 200rpx;
+}
+
+textarea {
+    width: 100%;
+    min-height: 200rpx;
+    margin-bottom: 40rpx;
+}

@@ -3,6 +3,7 @@ package com.senup.miniprogram.service;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.senup.miniprogram.utils.PagedResult;
 import com.senup.miniprogram.vo.PostVo;
 
 /**
@@ -16,4 +17,5 @@ import com.senup.miniprogram.vo.PostVo;
 public interface IPostServiceCustom extends IService<PostVo> {
     Page<PostVo> testpage(Page<PostVo> page, QueryWrapper<PostVo> wrapper);
 
+    PagedResult getAllPosts(Integer page,Integer size);
 }

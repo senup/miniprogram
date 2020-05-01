@@ -1,0 +1,67 @@
+.page_bd {
+    padding: 40rpx 80rpx;
+}
+
+.form-item {
+}
+
+.form-title {
+    display: flex;
+    align-items: center;
+    font-size: 28rpx;
+    color: #666;
+    line-height: 30rpx;
+}
+
+.form-title image {
+    width: 30rpx;
+    height: 30rpx;
+    margin-right: 20rpx;
+}
+
+.form-input {
+    margin-bottom: 40rpx;
+}
+
+.form-input input,.form-input picker,.form-input .select-school {
+    position: relative;
+    padding: 20rpx 0;
+    border-bottom: 1px solid #ccc;
+    font-size: 30rpx;
+    color: #000;
+    line-height: 30rpx;
+}
+
+.form-input-placeholder {
+    color: #ccc;
+}
+
+.icon-drop-down {
+    position: absolute;
+    top: 20rpx;
+    right: 0;
+    color: #333;
+}
+
+.form-select {
+    display: flex;
+    justify-content: space-around;
+    padding: 20rpx 0;
+    text-align: center;
+    font-size: 30rpx;
+    color: #999;
+}
+
+.form-select image {
+    width: 154rpx;
+    height: 154rpx;
+    margin-bottom: 10rpx;
+}
+
+.form-select view.active {
+    color: #000;
+}
+
+.btn-block {
+    margin-top: 80rpx;
+}

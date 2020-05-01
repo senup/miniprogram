@@ -1,0 +1,96 @@
+.tab-bar-placeholder {
+    height: 130rpx;
+}
+
+.tab-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 200;
+    padding: 0;
+    width: 100%;
+    height: 130rpx;
+}
+
+.tab-bar .background-image {
+    position: absolute;
+    bottom: 0;
+    z-index: 100;
+    width: 100%;
+    height: 130rpx;
+}
+
+.add-btn,.close-btn {
+    position: absolute;
+    bottom: 20rpx;
+    left: 50%;
+    z-index: 102;
+    width: 140rpx;
+    height: 140rpx;
+    margin-left: -70rpx;
+}
+
+.tab-bar-items {
+    position: absolute;
+    bottom: 4rpx;
+    display: flex;
+    justify-content: space-between;
+    z-index: 101;
+    width: 100%;
+}
+
+.tab-bar-item {
+    width: 250rpx;
+    text-align: center;
+}
+
+.tab-bar-item image {
+    width: 48rpx;
+    height: 48rpx;
+}
+
+.tab-bar-item view {
+    font-size: 20rpx;
+}
+
+.tab-bar-more {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 200;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.tab-bar-more .background-image {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 433rpx;
+}
+
+.tab-bar-more-items {
+    position: fixed;
+    bottom: 160rpx;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 140rpx;
+}
+
+.tab-bar-more-item {
+    width: 35%;
+    text-align: center;
+}
+
+.tab-bar-more-item image {
+    width: 70rpx;
+    height: 70rpx;
+}
+
+.tab-bar-more-item view {
+    margin-top: 10rpx;
+    font-size: 32rpx;
+    font-weight: 400;
+}

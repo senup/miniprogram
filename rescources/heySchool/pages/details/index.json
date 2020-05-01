@@ -1,0 +1,10 @@
+{
+    "navigationBarTitleText": "详情",
+    "usingComponents": {
+        "customer-service": "/components/customerService/customerService",
+        "comment-list": "/components/commentList/commentList",
+        "impression": "/components/impression/impression",
+        "action-bar": "/components/actionBar/actionBar"
+    },
+    "enablePullDownRefresh": true
+}

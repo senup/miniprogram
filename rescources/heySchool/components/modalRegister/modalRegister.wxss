@@ -1,0 +1,50 @@
+.modal-shade {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 300;
+}
+
+.modal-window {
+    position: relative;
+    width: 640rpx;
+    height: 802rpx;
+    background-image: url("https://www.myheyu.cn/static/window/unregistered.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.modal-window-button {
+    position: absolute;
+    top: 428rpx;
+    left: 50%;
+    margin-left: -125rpx;
+    width: 250rpx;
+    height: 90rpx;
+    color: #5c3b3c;
+    background-color: #f6bf87;
+    line-height: 90rpx;
+    border-radius: 45rpx;
+    font-size: 32rpx;
+    font-weight: 800;
+    box-shadow: 1rpx 1rpx 5rpx #f1bb88;
+}
+
+.modal-window-close {
+    position: absolute;
+    left: 285rpx;
+    bottom: -120rpx;
+    width: 70rpx;
+    height: 70rpx;
+    border-radius: 50%;
+    background-color: #999;
+    color: #fff;
+    text-align: center;
+    line-height: 70rpx;
+}

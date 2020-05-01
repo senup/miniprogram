@@ -1,0 +1,17 @@
+<view class="page__bd">
+    <view class="item">
+        <image bindtap="chooseImage" class="id-card-image" src="{{idCardImage}}"></image>
+        <view class="item-label">
+      选择清晰证件照片身份证/学生证/学生卡（正面）
+    </view>
+    </view>
+    <view class="item">
+        <image bindtap="chooseImageReverse" class="id-card-image" src="{{idCardImageReverse}}"></image>
+        <view class="item-label">
+      选择清晰证件照片身份证/学生证/学生卡（反面）
+    </view>
+    </view>
+    <button bindtap="postAuthImage" class="btn-block" disabled="{{disabled}}" loading="{{loading}}">
+    提交
+  </button>
+</view>

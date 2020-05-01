@@ -1,0 +1,86 @@
+page {
+    background-color: #f2f2f2;
+    padding: 42rpx 48rpx;
+}
+
+.page_bd {
+    width: 654rpx;
+    padding: 48rpx;
+    background-color: #fff;
+    border-radius: 20rpx;
+    box-sizing: border-box;
+}
+
+.title {
+    font-size: 28rpx;
+    color: #000;
+}
+
+.user-info {
+    display: flex;
+    margin: 40rpx 0;
+}
+
+.user-info-avatar {
+    width: 88rpx;
+    height: 88rpx;
+    margin-right: 30rpx;
+    border-radius: 8rpx;
+}
+
+.user-info-nickname {
+    font-size: 36rpx;
+}
+
+.input-box {
+    display: flex;
+    margin: 40rpx 0;
+    padding-bottom: 10rpx;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.input-label {
+    font-size: 68rpx;
+    font-weight: bold;
+    color: #000;
+}
+
+.input-main {
+    height: 110rpx;
+    line-height: 110rpx;
+    font-size: 98rpx;
+    font-weight: bold;
+    color: #000;
+}
+
+.input-main-placeholder {
+    color: rgba(204,204,204,1);
+    font-size: 32rpx;
+    font-weight: 400;
+}
+
+.tips {
+    display: flex;
+    font-size: 28rpx;
+    color: #999;
+    line-height: 40rpx;
+}
+
+.tips-danger {
+    color: #ff525a;
+}
+
+.btn-text {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #5add61;
+    font-size: 28rpx;
+    line-height: 40rpx;
+}
+
+.btn-block {
+    margin-top: 40rpx;
+    margin-bottom: 20rpx;
+    border-radius: 44rpx;
+}

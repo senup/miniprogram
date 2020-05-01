@@ -1,0 +1,32 @@
+<template name="coupons-item">
+    <view class="coupons-item">
+        <view>
+            <view class="coupons-item-sum" wx:if="{{type==1}}">￥{{discountAmount}}</view>
+            <view class="coupons-item-discount" wx:if="{{type==2}}">{{discountPrecent*0.1}}折</view>
+        </view>
+        <view>
+            <view class="coupons-item-label" wx:if="{{discountThreshold}}">赏金满{{discountThreshold}}元可用</view>
+            <view class="coupons-item-label" wx:else>无门槛抵用券</view>
+        </view>
+        <view>
+            <checkbox checked="{{checked}}" value="{{index}}"></checkbox>
+        </view>
+    </view>
+</template>
+<view class="page_bd">
+    <checkbox-group bindchange="checkboxChange">
+        <template is="coupons-item" data="{{...item,index:index}}" wx:for="{{couponList}}" wx:key="index"></template>
+    </checkbox-group>
+</view>
+<view class="page_ft">
+    <button bindtap="submitChange">确认使用</button>
+    <view wx:if="{{couponList[couponIndexCurrent].type==1}}">
+    使用1张优惠券,优惠{{couponList[couponIndexCurrent].discountAmount}}元
+  </view>
+    <view wx:elif="{{couponList[couponIndexCurrent].type==2}}">
+    使用1张优惠券,打{{couponList[couponIndexCurrent].discountPrecent*0.1}}折
+  </view>
+    <view wx:else>
+    不使用优惠券
+  </view>
+</view>

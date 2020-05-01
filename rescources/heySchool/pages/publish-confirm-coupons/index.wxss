@@ -1,0 +1,104 @@
+.page_bd {
+    padding: 0 40rpx;
+}
+
+.coupons-items {
+    margin-top: 48rpx;
+}
+
+.coupons-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120rpx;
+    margin-bottom: 20rpx;
+    padding: 0 40rpx 0 56rpx;
+    background-color: #fef6f7;
+    border-radius: 20rpx;
+    box-sizing: border-box;
+}
+
+.coupons-item>view:first-of-type {
+    width: 160rpx;
+    border-right: 1px dashed #d9d9d9;
+}
+
+.coupons-item>view:nth-of-type(2) {
+    width: 200rpx;
+    text-align: left;
+}
+
+.coupons-item-sum {
+    margin-left: -10rpx;
+    font-size: 54rpx;
+    color: #ff525a;
+    line-height: 45rpx;
+}
+
+.coupons-item-discount {
+    font-size: 54rpx;
+    color: #ff525a;
+    line-height: 45rpx;
+}
+
+.coupons-item-label {
+    font-size: 24rpx;
+    color: #999;
+}
+
+.coupons-item button {
+    width: 196rpx;
+    height: 58rpx;
+    font-size: 28rpx;
+    color: #000;
+    line-height: 58rpx;
+    border-radius: 29rpx;
+}
+
+checkbox .wx-checkbox-input {
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+}
+
+checkbox .wx-checkbox-input.wx-checkbox-input-checked {
+    border-color: #ffd034!important;
+    background: #ffd034!important;
+}
+
+checkbox .wx-checkbox-input.wx-checkbox-input-checked::before {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    font-size: 10px;
+    color: #fff;
+    background: transparent;
+    transform: translate(-50%,-50%) scale(1);
+}
+
+.page_ft {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    height: 98rpx;
+    padding: 10rpx 40rpx;
+    background-color: #fff;
+    z-index: 200;
+    font-size: 28rpx;
+    color: #666;
+    box-shadow: 0px -4px 24px 0px rgba(230,230,230,1);
+    box-sizing: border-box;
+}
+
+.page_ft button {
+    margin: 0;
+    padding: 0 40rpx;
+    border-radius: 25rpx;
+}

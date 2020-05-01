@@ -1,0 +1,18 @@
+<view class="impression-container">
+    <view class="impression-title">
+        <view>我对TA的印象</view>
+        <button bindtap="goPersonalCenter">查看主页</button>
+    </view>
+    <view class="impression-box">
+        <button bindtap="goAddImpression" class="add-impression-btn" wx:if="{{impressionToMe.length==0}}">添加印象</button>
+        <view class="tag" wx:for="{{impressionToMe}}" wx:key="index">{{item.content}}</view>
+    </view>
+    <view class="impression-label">TA对我的印象</view>
+    <view class="impression-box">
+        <view class="impression-none" wx:if="{{impressionToOther.length==0}}">
+            <image src="{{baseImageUrl}}static/task-detail/icon_yx.png"></image>
+            <text>对方还在思考中...</text>
+        </view>
+        <view class="tag" wx:for="{{impressionToOther}}" wx:key="index">{{item.content}}</view>
+    </view>
+</view>

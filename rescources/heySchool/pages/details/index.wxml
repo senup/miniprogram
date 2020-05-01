@@ -1,0 +1,103 @@
+<import src="/templates/public/public.wxml"></import>
+<template is="completeLoading" data wx:if="{{completeLoading}}"></template>
+<customer-service bind:closeModal="closeModal" wx:if="{{customerService}}"></customer-service>
+<view class="page_hd">
+    <view class="user-info-box">
+        <template is="userInfo" data="{{...publisherInfo}}"></template>
+        <image bindtap="clickShowActionSheet" class="icon_more" src="/images/details/icon_more.png" wx:if="{{userInfo.userId==acceptorInfo.userId||userInfo.userId==publisherInfo.userId}}"></image>
+    </view>
+    <view class="card-image-grid" wx:if="{{images}}">
+        <image bindtap="previewImage" data-imgs="{{images}}" data-uri="{{item}}" mode="aspectFill" src="{{item}}" wx:for="{{images}}" wx:key="index"></image>
+    </view>
+    <view class="dynamic-content" wx:if="{{contentType==10||contentType==11}}">{{content}}</view>
+    <block wx:if="{{contentType==0||contentType==1}}">
+        <view class="panel-box">
+            <view class="panel-title">
+                <view class="panel-title-name">{{task.name}}</view>
+                <view class="panel-title-phone">
+                    <text class="iconfont icon-phone"></text>{{task.phonenumber}}</view>
+                <view class="panel-title-amount">￥{{task.amount}}</view>
+            </view>
+            <view class="panel-main" wx:if="{{contentType==0}}">
+                <view class="panel-main-items">
+                    <view class="panel-main-item">
+                        <view>件数</view>
+                        <view class="panel-main-item-right">{{task.express.length}}件</view>
+                    </view>
+                </view>
+                <view class="panel-main-items" wx:for="{{task.express}}" wx:key="index">
+                    <view class="panel-main-item">
+                        <view>取件地点</view>
+                        <view>{{item.startAddress}}</view>
+                    </view>
+                    <view class="panel-main-item">
+                        <view>送达地点</view>
+                        <view>{{item.endAddress}}</view>
+                    </view>
+                    <view class="panel-main-item" wx:if="{{userInfo.userId==publisherInfo.userId||userInfo.userId==acceptorInfo.userId}}">
+                        <view>取件信息</view>
+                        <view>{{item.message}}</view>
+                    </view>
+                </view>
+                <view class="panel-main-note">备注：{{task.note}}</view>
+            </view>
+            <view class="panel-main" wx:if="{{contentType==1}}">
+                <view class="panel-main-other">
+          {{content}}
+        </view>
+            </view>
+        </view>
+        <view class="public">
+            <view class="public-title">任务状态</view>
+            <view class="state-info">
+                <view class="progress" wx:if="{{haveProgress}}">
+                    <view class="progress-tip">{{progressTipMsg}}</view>
+                    <view class="progress-item" wx:for="{{progressStates}}" wx:key="index">
+                        <image src="/images/details/icon_progress_wks.png" wx:if="{{index>progressCurrent}}"></image>
+                        <image src="/images/details/icon_progress_xz.png" wx:elif="{{index==progressCurrent}}"></image>
+                        <image src="/images/details/icon_progress_yjs.png" wx:elif="{{index<progressCurrent}}"></image>
+                        <view class="progress-line {{index<progressCurrent?'progress-line-active':''}}" wx:if="{{index!=3}}"></view>
+                        <view class="progress-text {{index<=progressCurrent?'progress-text-active':''}}">{{item}}</view>
+                    </view>
+                    <button bindtap="submitAcceptTask" class="btn-big" loading="{{loading}}" wx:if="{{userInfo.userId!=publisherInfo.userId&&progressCurrent==0}}">接单</button>
+                    <button bindtap="submitFinishTask" class="btn-big" loading="{{loading}}" wx:if="{{userInfo.userId==acceptorInfo.userId&&progressCurrent==1}}">已完成</button>
+                    <button bindtap="submitConfirmFinishTask" class="btn-big" loading="{{loading}}" wx:if="{{userInfo.userId==publisherInfo.userId&&progressCurrent==2}}">确认完成</button>
+                </view>
+                <view wx:else>{{progressMsg}}</view>
+            </view>
+        </view>
+        <view class="public" wx:if="{{userInfo.userId==publisherInfo.userId&&task.status>=20}}">
+            <view class="public-title">接单同学</view>
+            <view class="user-info-box">
+                <template is="userInfo" data="{{...acceptorInfo}}"></template>
+                <image bindtap="copyPhone" class="icon_sms" data-phone="{{acceptorInfo.phonenumber}}" src="/images/details/icon_sx.png"></image>
+                <image bindtap="callPhone" class="icon_phone" data-phone="{{acceptorInfo.phonenumber}}" src="/images/details/icon_dh.png"></image>
+            </view>
+        </view>
+        <view class="public" wx:if="{{userInfo.userId==acceptorInfo.userId&&task.status>=20}}">
+            <view class="public-title">发单同学</view>
+            <view class="user-info-box">
+                <template is="userInfo" data="{{...publisherInfo}}"></template>
+                <image bindtap="copyPhone" class="icon_sms" data-phone="{{publisherInfo.phonenumber}}" src="/images/details/icon_sx.png"></image>
+                <image bindtap="callPhone" class="icon_phone" data-phone="{{publisherInfo.phonenumber}}" src="/images/details/icon_dh.png"></image>
+            </view>
+        </view>
+        <impression feedId="{{contentID}}" impressionToMe="{{impressionToMe}}" impressionToOther="{{impressionToOther}}" toUserInfo="{{userInfo.userId==publisherInfo.userId?acceptorInfo:publisherInfo}}" wx:if="{{(userInfo.userId==publisherInfo.userId||userInfo.userId==acceptorInfo.userId)&&task.status>=20}}"></impression>
+    </block>
+</view>
+<view class="page_bd">
+    <view class="statistics">
+        <view>
+            <text class="iconfont icon-good"></text>
+            <text>{{otherInfo.likeCount}}个人点了赞</text>
+        </view>
+        <view>
+            <text class="iconfont icon-reply"></text>
+            <text>{{otherInfo.commentCount}}条评论</text>
+        </view>
+    </view>
+    <comment-list bind:change="changeCommentList" bind:refresh="onPullDownRefresh" bind:show="changeShowTextarea" btnBottom="{{btnBottom}}" commentList="{{commentList}}" isLoading="{{loadingComment}}" isNoMore="{{isNoMoreComment}}" template="{{commentTemplateDetailList}}" userInfo="{{userInfo}}"></comment-list>
+</view>
+<view class="page_ft">
+    <action-bar bind:changelike="changeLike" bind:refresh="onPullDownRefresh" btnBottom="{{btnBottom}}" contentId="{{contentID}}" editing="{{commentfocus}}" like="{{like}}" template="{{commentTemplateDetailList}}" type="comment" wx:if="{{!completeLoading&&showTextarea&&!showWindow}}"></action-bar>
+</view>

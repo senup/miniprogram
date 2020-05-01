@@ -1,0 +1,207 @@
+page {
+    padding: 20rpx 40rpx;
+    box-sizing: border-box;
+    background-color: #f2f2f2;
+}
+
+.page_hd {
+    height: 156rpx;
+    padding: 30rpx 40rpx;
+    background-image: url(https://www.annybay.com/static/publish/bg_lxr.png);
+    background-size: 100% 156rpx;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+}
+
+.info-name {
+    font-size: 40rpx;
+    font-weight: 600;
+    margin-bottom: 10rpx;
+}
+
+.info-phone {
+    font-size: 24rpx;
+}
+
+.icon-phone {
+    margin-right: 10rpx;
+    color: #67dd55;
+    font-size: 30rpx;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.page_bd {
+    margin-top: 40rpx;
+    padding: 40rpx;
+    background-color: #fff;
+    border-radius: 20rpx;
+}
+
+.page_bd-title {
+    position: relative;
+    height: 70rpx;
+    font-size: 36rpx;
+    font-weight: 500;
+}
+
+.page_bd-title::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 36rpx;
+    height: 6rpx;
+    background-color: #e6e6e6;
+    content: "";
+}
+
+.panel-content-items {
+    padding-top: 30rpx;
+    color: #666;
+    font-size: 28rpx;
+}
+
+.card-image-grid {
+    margin-top: 30rpx;
+    margin-bottom: -14rpx;
+}
+
+.card-image-grid image {
+    width: 180rpx;
+    height: 180rpx;
+    margin-right: 25rpx;
+    margin-bottom: 16rpx;
+    border-radius: 12rpx;
+}
+
+.card-image-grid image:nth-of-type(3n) {
+    margin-right: 0;
+}
+
+.dynamic-content {
+    margin-top: 20rpx;
+    font-size: 28rpx;
+    color: #999;
+    line-height: 42rpx;
+}
+
+.text-red {
+    color: #ed0021!important;
+}
+
+.panel-main-items {
+    padding-top: 30rpx;
+    border-bottom: 1rpx solid #e6e6e6;
+}
+
+.panel-main-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 30rpx;
+}
+
+.panel-main-item>view:first-of-type {
+    width: 150rpx;
+    min-width: 150rpx;
+    font-size: 30rpx;
+}
+
+.panel-main-item>view:nth-of-type(2) {
+    font-size: 28rpx;
+    color: #666;
+    flex-grow: 1;
+    word-wrap: break-word;
+    word-break: break-all;
+    overflow: hidden;
+}
+
+.panel-other-items {
+    padding-top: 30rpx;
+}
+
+.panel-other-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 30rpx;
+}
+
+.panel-other-item>view:first-of-type {
+    width: 150rpx;
+    min-width: 150rpx;
+    font-size: 30rpx;
+}
+
+.panel-other-item>view:nth-of-type(2) {
+    text-align: right;
+    font-size: 28rpx;
+    color: #666;
+    flex-grow: 1;
+}
+
+.note-textarea {
+    width: 100%;
+    min-height: 108rpx;
+    padding: 10rpx;
+    background-color: #fafafa;
+    text-align: left;
+    border-radius: 8rpx;
+    box-sizing: border-box;
+}
+
+.page_ft-placeholder {
+    height: 96rpx;
+}
+
+.page_ft {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 96rpx;
+    background-color: #000;
+}
+
+.bounty-item view {
+    display: inline-block;
+}
+
+.payment {
+    margin-left: 84rpx;
+    margin-top: 20rpx;
+    color: #fff;
+    font-weight: 500;
+    font-size: 44rpx;
+    line-height: 50rpx;
+}
+
+.discount {
+    position: relative;
+    padding-left: 20rpx;
+    margin-left: 20rpx;
+    color: #ccc;
+    font-size: 26rpx;
+    line-height: 40rpx;
+}
+
+.discount::before {
+    position: absolute;
+    left: 0;
+    bottom: 6rpx;
+    width: 1px;
+    height: 28rpx;
+    background-color: #666;
+    content: "";
+}
+
+.discount text {
+    color: #969696;
+}
+
+.btn-pay {
+    width: 210rpx;
+    height: 96rpx;
+    line-height: 96rpx;
+    border-radius: 0;
+}

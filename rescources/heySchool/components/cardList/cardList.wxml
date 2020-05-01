@@ -1,0 +1,11 @@
+<import src="/templates/card/card.wxml"></import>
+<import src="/templates/public/public.wxml"></import>
+<view class="card-list-container">
+    <block wx:for="{{arrow}}" wx:key="index">
+        <template is="cardExpressageTask" data="{{...item,index:index}}" wx:if="{{item.type==0}}"></template>
+        <template is="cardOtherTask" data="{{...item,index:index}}" wx:if="{{item.type==1}}"></template>
+        <template is="cardDynamic" data="{{...item,index:index}}" wx:if="{{item.type==10||item.type==11}}"></template>
+    </block>
+    <template is="loading" data wx:if="{{isLoading}}"></template>
+    <view class="no-more" hidden="{{!isNoMore||arrow.length==0}}">人家也是有底线的~</view>
+</view>

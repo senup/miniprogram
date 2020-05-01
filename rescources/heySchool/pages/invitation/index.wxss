@@ -1,0 +1,88 @@
+@import "../../templates/public/public.wxss";
+
+page {
+    padding: 0 40rpx;
+    box-sizing: border-box;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.canvas {
+    width: 750px;
+    height: 1334px;
+    z-index: 10;
+}
+
+.invitation-main {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    background-color: #fff;
+    z-index: 500;
+}
+
+.invitation-image {
+    position: relative;
+    padding-bottom: 40rpx;
+    text-align: center;
+}
+
+.image-placeholder {
+    width: 524rpx;
+    height: 932rpx;
+    margin: 0 auto;
+    background-color: #eee;
+    border: 1px solid #999;
+    text-align: center;
+    font-size: 24rpx;
+    line-height: 932rpx;
+    color: #999;
+}
+
+.invitation-image .image {
+    width: 524rpx;
+    height: 932rpx;
+    margin: 0 auto;
+    background-color: #eee;
+}
+
+.invitation-operations {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #fff;
+    padding: 40rpx 0;
+}
+
+.operations-item {
+    width: 30%;
+    text-align: center;
+    padding-bottom: 40rpx;
+}
+
+.operations-item cover-image {
+    width: 100rpx;
+    height: 100rpx;
+    margin: 0 auto;
+}
+
+.operations-item cover-view {
+    font-size: 24rpx;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: rgba(153,153,153,1);
+    margin-top: 10rpx;
+}
+
+button {
+    background-color: #fff;
+    line-height: normal;
+}

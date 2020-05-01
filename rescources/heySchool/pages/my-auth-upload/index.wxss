@@ -1,0 +1,26 @@
+.page__bd {
+    text-align: center;
+}
+
+.item {
+    margin-top: 40rpx;
+    margin-bottom: 90rpx;
+    text-align: center;
+}
+
+.id-card-image {
+    width: 496rpx;
+    height: 314rpx;
+    margin-bottom: 20rpx;
+    border-radius: 10px;
+}
+
+.item-label {
+    font-size: 24rpx;
+    text-align: center;
+}
+
+.btn-block {
+    display: inline-block;
+    width: 300rpx;
+}

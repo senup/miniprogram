@@ -2,25 +2,381 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="37e433cd-1a5f-4568-a0be-740395afd47f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_pagehelper_pagehelper_5_1_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_pagehelper_pagehelper_spring_boot_autoconfigure_1_2_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_pagehelper_pagehelper_spring_boot_starter_1_2_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_autoconfigure_1_3_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_starter_1_3_1.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_jsqlparser_jsqlparser_3_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_jsqlparser_jsqlparser_1_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/miniprogram/.idea/miniprogram.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/miniprogram/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/miniprogram/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/miniprogram/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rescources/heySchool/.idea/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rescources/heySchool/.idea/heySchool.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rescources/heySchool/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rescources/heySchool/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rescources/heySchool/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/senup/miniprogram/utils/PagedResult.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/senup/miniprogram/config/MybatisPlusConfig.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/video-dev前端/app.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/video-dev前端/app.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/video-dev前端/app.wxss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/video-dev前端/pages/chooseBgm/chooseBgm.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/video-dev前端/pages/chooseBgm/chooseBgm.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/video-dev前端/pages/chooseBgm/chooseBgm.wxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/video-dev前端/pages/chooseBgm/chooseBgm.wxss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/video-dev前端/pages/index/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/video-dev前端/pages/index/index.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/video-dev前端/pages/index/index.wxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/video-dev前端/pages/index/index.wxss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/video-dev前端/pages/mine/mine.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/video-dev前端/pages/mine/mine.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/video-dev前端/pages/mine/mine.wxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/video-dev前端/pages/mine/mine.wxss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/video-dev前端/pages/report/report.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/video-dev前端/pages/report/report.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/video-dev前端/pages/report/report.wxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/video-dev前端/pages/report/report.wxss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/video-dev前端/pages/resource/images/arrow.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/video-dev前端/pages/resource/images/camera.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/video-dev前端/pages/resource/images/comments.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/video-dev前端/pages/resource/images/dsp.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/video-dev前端/pages/resource/images/follow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/video-dev前端/pages/resource/images/index.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/video-dev前端/pages/resource/images/like.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/video-dev前端/pages/resource/images/mine.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/video-dev前端/pages/resource/images/music.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/video-dev前端/pages/resource/images/noneface.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/video-dev前端/pages/resource/images/password.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/video-dev前端/pages/resource/images/report_face.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/video-dev前端/pages/resource/images/search.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/video-dev前端/pages/resource/images/share.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/video-dev前端/pages/resource/images/unlike.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/video-dev前端/pages/resource/images/username.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/video-dev前端/pages/searchVideo/searchVideo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/video-dev前端/pages/searchVideo/searchVideo.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/video-dev前端/pages/searchVideo/searchVideo.wxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/video-dev前端/pages/searchVideo/searchVideo.wxss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/video-dev前端/pages/userLogin/login.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/video-dev前端/pages/userLogin/login.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/video-dev前端/pages/userLogin/login.wxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/video-dev前端/pages/userLogin/login.wxss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/video-dev前端/pages/userRegist/regist.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/video-dev前端/pages/userRegist/regist.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/video-dev前端/pages/userRegist/regist.wxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/video-dev前端/pages/userRegist/regist.wxss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/video-dev前端/pages/videoinfo/videoinfo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/video-dev前端/pages/videoinfo/videoinfo.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/video-dev前端/pages/videoinfo/videoinfo.wxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/video-dev前端/pages/videoinfo/videoinfo.wxss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/video-dev前端/pages/videotest/videotest.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/video-dev前端/pages/videotest/videotest.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/video-dev前端/pages/videotest/videotest.wxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/video-dev前端/pages/videotest/videotest.wxss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/video-dev前端/project.config.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/video-dev前端/sitemap.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/video-dev前端/utils/videoUtil.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/video-dev前端/wxSearchView/wxSearchView.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/video-dev前端/wxSearchView/wxSearchView.wxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/video-dev前端/wxSearchView/wxSearchView.wxss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/.project" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/.settings/org.eclipse.core.resources.prefs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/.settings/org.eclipse.m2e.core.prefs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-common/.classpath" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-common/.project" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-common/.settings/org.eclipse.core.resources.prefs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-common/.settings/org.eclipse.jdt.core.prefs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-common/.settings/org.eclipse.m2e.core.prefs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-common/.settings/org.springframework.ide.eclipse.prefs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-common/pom.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-common/src/main/java/com/imooc/enums/BGMOperatorTypeEnum.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-common/src/main/java/com/imooc/enums/VideoStatusEnum.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-common/src/main/java/com/imooc/utils/FFMpegTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-common/src/main/java/com/imooc/utils/FetchVideoCover.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-common/src/main/java/com/imooc/utils/IMoocJSONResult.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-common/src/main/java/com/imooc/utils/JsonUtils.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-common/src/main/java/com/imooc/utils/MD5Utils.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-common/src/main/java/com/imooc/utils/MergeVideoMp3.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-common/src/main/java/com/imooc/utils/MyMapper.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-common/src/main/java/com/imooc/utils/PagedResult.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-common/src/main/java/com/imooc/utils/RedisOperator.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-common/src/main/java/com/imooc/utils/TimeAgoUtils.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-common/src/main/java/org/n3r/idworker/Code.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-common/src/main/java/org/n3r/idworker/DayCode.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-common/src/main/java/org/n3r/idworker/Id.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-common/src/main/java/org/n3r/idworker/IdWorker.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-common/src/main/java/org/n3r/idworker/InvalidSystemClock.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-common/src/main/java/org/n3r/idworker/RandomCodeStrategy.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-common/src/main/java/org/n3r/idworker/Sid.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-common/src/main/java/org/n3r/idworker/Test.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-common/src/main/java/org/n3r/idworker/WorkerIdStrategy.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-common/src/main/java/org/n3r/idworker/strategy/DayPrefixRandomCodeStrategy.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-common/src/main/java/org/n3r/idworker/strategy/DefaultRandomCodeStrategy.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-common/src/main/java/org/n3r/idworker/strategy/DefaultWorkerIdStrategy.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-common/src/main/java/org/n3r/idworker/strategy/FileLock.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-common/src/main/java/org/n3r/idworker/utils/HttpReq.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-common/src/main/java/org/n3r/idworker/utils/IPv4Utils.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-common/src/main/java/org/n3r/idworker/utils/Ip.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-common/src/main/java/org/n3r/idworker/utils/Props.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-common/src/main/java/org/n3r/idworker/utils/Serializes.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-common/src/main/java/org/n3r/idworker/utils/Utils.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-common/target/classes/META-INF/MANIFEST.MF" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-common/target/classes/META-INF/maven/com.imooc/imooc-videos-dev-common/pom.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-common/target/classes/META-INF/maven/com.imooc/imooc-videos-dev-common/pom.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-common/target/classes/com/imooc/enums/BGMOperatorTypeEnum.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-common/target/classes/com/imooc/enums/VideoStatusEnum.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-common/target/classes/com/imooc/utils/FFMpegTest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-common/target/classes/com/imooc/utils/FetchVideoCover.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-common/target/classes/com/imooc/utils/IMoocJSONResult.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-common/target/classes/com/imooc/utils/JsonUtils.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-common/target/classes/com/imooc/utils/MD5Utils.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-common/target/classes/com/imooc/utils/MergeVideoMp3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-common/target/classes/com/imooc/utils/MyMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-common/target/classes/com/imooc/utils/PagedResult.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-common/target/classes/com/imooc/utils/RedisOperator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-common/target/classes/com/imooc/utils/TimeAgoUtils.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-common/target/classes/org/n3r/idworker/Code.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-common/target/classes/org/n3r/idworker/DayCode.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-common/target/classes/org/n3r/idworker/Id.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-common/target/classes/org/n3r/idworker/IdWorker.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-common/target/classes/org/n3r/idworker/InvalidSystemClock.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-common/target/classes/org/n3r/idworker/RandomCodeStrategy.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-common/target/classes/org/n3r/idworker/Sid$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-common/target/classes/org/n3r/idworker/Sid.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-common/target/classes/org/n3r/idworker/Test.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-common/target/classes/org/n3r/idworker/WorkerIdStrategy.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-common/target/classes/org/n3r/idworker/strategy/DayPrefixRandomCodeStrategy.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-common/target/classes/org/n3r/idworker/strategy/DefaultRandomCodeStrategy$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-common/target/classes/org/n3r/idworker/strategy/DefaultRandomCodeStrategy.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-common/target/classes/org/n3r/idworker/strategy/DefaultWorkerIdStrategy$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-common/target/classes/org/n3r/idworker/strategy/DefaultWorkerIdStrategy$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-common/target/classes/org/n3r/idworker/strategy/DefaultWorkerIdStrategy.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-common/target/classes/org/n3r/idworker/strategy/FileLock.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-common/target/classes/org/n3r/idworker/utils/HttpReq.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-common/target/classes/org/n3r/idworker/utils/IPv4Utils.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-common/target/classes/org/n3r/idworker/utils/Ip.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-common/target/classes/org/n3r/idworker/utils/Props$Silent.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-common/target/classes/org/n3r/idworker/utils/Props.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-common/target/classes/org/n3r/idworker/utils/Serializes.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-common/target/classes/org/n3r/idworker/utils/Utils.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-common/target/imooc-videos-dev-common-0.0.1-SNAPSHOT.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-common/target/maven-archiver/pom.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-common/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-common/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-mapper/.classpath" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-mapper/.project" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-mapper/.settings/org.eclipse.core.resources.prefs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-mapper/.settings/org.eclipse.jdt.core.prefs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-mapper/.settings/org.eclipse.m2e.core.prefs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-mapper/.settings/org.springframework.ide.eclipse.prefs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-mapper/pom.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-mapper/src/main/java/com/imooc/mapper/BgmMapper.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-mapper/src/main/java/com/imooc/mapper/CommentsMapper.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-mapper/src/main/java/com/imooc/mapper/CommentsMapperCustom.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-mapper/src/main/java/com/imooc/mapper/SearchRecordsMapper.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-mapper/src/main/java/com/imooc/mapper/UsersFansMapper.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-mapper/src/main/java/com/imooc/mapper/UsersLikeVideosMapper.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-mapper/src/main/java/com/imooc/mapper/UsersMapper.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-mapper/src/main/java/com/imooc/mapper/UsersReportMapper.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-mapper/src/main/java/com/imooc/mapper/VideosMapper.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-mapper/src/main/java/com/imooc/mapper/VideosMapperCustom.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-mapper/target/classes/META-INF/MANIFEST.MF" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-mapper/target/classes/META-INF/maven/com.imooc/imooc-videos-dev-mapper/pom.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-mapper/target/classes/META-INF/maven/com.imooc/imooc-videos-dev-mapper/pom.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-mapper/target/classes/com/imooc/mapper/BgmMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-mapper/target/classes/com/imooc/mapper/CommentsMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-mapper/target/classes/com/imooc/mapper/CommentsMapperCustom.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-mapper/target/classes/com/imooc/mapper/SearchRecordsMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-mapper/target/classes/com/imooc/mapper/UsersFansMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-mapper/target/classes/com/imooc/mapper/UsersLikeVideosMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-mapper/target/classes/com/imooc/mapper/UsersMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-mapper/target/classes/com/imooc/mapper/UsersReportMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-mapper/target/classes/com/imooc/mapper/VideosMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-mapper/target/classes/com/imooc/mapper/VideosMapperCustom.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-mapper/target/imooc-videos-dev-mapper-0.0.1-SNAPSHOT.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-mapper/target/maven-archiver/pom.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-mapper/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-mapper/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-mapper/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-mini-api/.classpath" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-mini-api/.project" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-mini-api/.settings/org.eclipse.core.resources.prefs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-mini-api/.settings/org.eclipse.jdt.core.prefs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-mini-api/.settings/org.eclipse.m2e.core.prefs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-mini-api/.settings/org.springframework.ide.eclipse.prefs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-mini-api/pom.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-mini-api/src/main/java/com/imooc/Application.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-mini-api/src/main/java/com/imooc/Swagger2.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-mini-api/src/main/java/com/imooc/WebMvcConfig.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-mini-api/src/main/java/com/imooc/ZKCuratorClient.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-mini-api/src/main/java/com/imooc/cofig/ResourceConfig.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-mini-api/src/main/java/com/imooc/controller/BasicController.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-mini-api/src/main/java/com/imooc/controller/BgmController.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-mini-api/src/main/java/com/imooc/controller/HelloWorldController.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-mini-api/src/main/java/com/imooc/controller/RegistLoginController.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-mini-api/src/main/java/com/imooc/controller/UserCRUDController.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-mini-api/src/main/java/com/imooc/controller/UserController.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-mini-api/src/main/java/com/imooc/controller/VideoController.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-mini-api/src/main/java/com/imooc/controller/interceptor/MiniInterceptor.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-mini-api/src/main/java/com/imooc/service/crud/UserCRUDService.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-mini-api/src/main/java/com/imooc/service/crud/UserCRUDServiceImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-mini-api/src/main/resources/application.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-mini-api/src/main/resources/imooc-video-dev 20180530.sql" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-mini-api/src/main/resources/log4j.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-mini-api/src/main/resources/mapper/BgmMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-mini-api/src/main/resources/mapper/CommentsMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-mini-api/src/main/resources/mapper/CommentsMapperCustom.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-mini-api/src/main/resources/mapper/SearchRecordsMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-mini-api/src/main/resources/mapper/UsersFansMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-mini-api/src/main/resources/mapper/UsersLikeVideosMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-mini-api/src/main/resources/mapper/UsersMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-mini-api/src/main/resources/mapper/UsersReportMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-mini-api/src/main/resources/mapper/VideosMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-mini-api/src/main/resources/mapper/VideosMapperCustom.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-mini-api/src/main/resources/resource.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-mini-api/target/classes/META-INF/MANIFEST.MF" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-mini-api/target/classes/META-INF/maven/com.imooc/imooc-videos-dev-mini-api/pom.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-mini-api/target/classes/META-INF/maven/com.imooc/imooc-videos-dev-mini-api/pom.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-mini-api/target/classes/application.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-mini-api/target/classes/com/imooc/Application.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-mini-api/target/classes/com/imooc/Swagger2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-mini-api/target/classes/com/imooc/WebMvcConfig.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-mini-api/target/classes/com/imooc/ZKCuratorClient$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-mini-api/target/classes/com/imooc/ZKCuratorClient.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-mini-api/target/classes/com/imooc/cofig/ResourceConfig.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-mini-api/target/classes/com/imooc/controller/BasicController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-mini-api/target/classes/com/imooc/controller/BgmController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-mini-api/target/classes/com/imooc/controller/HelloWorldController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-mini-api/target/classes/com/imooc/controller/RegistLoginController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-mini-api/target/classes/com/imooc/controller/UserCRUDController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-mini-api/target/classes/com/imooc/controller/UserController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-mini-api/target/classes/com/imooc/controller/VideoController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-mini-api/target/classes/com/imooc/controller/interceptor/MiniInterceptor.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-mini-api/target/classes/com/imooc/service/crud/UserCRUDService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-mini-api/target/classes/com/imooc/service/crud/UserCRUDServiceImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-mini-api/target/classes/imooc-video-dev 20180530.sql" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-mini-api/target/classes/log4j.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-mini-api/target/classes/mapper/BgmMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-mini-api/target/classes/mapper/CommentsMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-mini-api/target/classes/mapper/CommentsMapperCustom.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-mini-api/target/classes/mapper/SearchRecordsMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-mini-api/target/classes/mapper/UsersFansMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-mini-api/target/classes/mapper/UsersLikeVideosMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-mini-api/target/classes/mapper/UsersMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-mini-api/target/classes/mapper/UsersReportMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-mini-api/target/classes/mapper/VideosMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-mini-api/target/classes/mapper/VideosMapperCustom.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-mini-api/target/classes/resource.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-mini-api/target/imooc-videos-dev-mini-api-0.0.1-SNAPSHOT.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-mini-api/target/maven-archiver/pom.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-mini-api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-mini-api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-mini-api/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-pojo/.classpath" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-pojo/.project" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-pojo/.settings/org.eclipse.core.resources.prefs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-pojo/.settings/org.eclipse.jdt.core.prefs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-pojo/.settings/org.eclipse.m2e.core.prefs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-pojo/.settings/org.springframework.ide.eclipse.prefs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-pojo/pom.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-pojo/src/main/java/com/imooc/pojo/Bgm.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-pojo/src/main/java/com/imooc/pojo/Comments.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-pojo/src/main/java/com/imooc/pojo/SearchRecords.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-pojo/src/main/java/com/imooc/pojo/Users.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-pojo/src/main/java/com/imooc/pojo/UsersFans.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-pojo/src/main/java/com/imooc/pojo/UsersLikeVideos.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-pojo/src/main/java/com/imooc/pojo/UsersReport.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-pojo/src/main/java/com/imooc/pojo/Videos.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-pojo/src/main/java/com/imooc/pojo/vo/CommentsVO.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-pojo/src/main/java/com/imooc/pojo/vo/PublisherVideo.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-pojo/src/main/java/com/imooc/pojo/vo/UsersVO.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-pojo/src/main/java/com/imooc/pojo/vo/VideosVO.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-pojo/target/classes/META-INF/MANIFEST.MF" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-pojo/target/classes/META-INF/maven/com.imooc/imooc-videos-dev-pojo/pom.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-pojo/target/classes/META-INF/maven/com.imooc/imooc-videos-dev-pojo/pom.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-pojo/target/classes/com/imooc/pojo/Bgm.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-pojo/target/classes/com/imooc/pojo/Comments.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-pojo/target/classes/com/imooc/pojo/SearchRecords.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-pojo/target/classes/com/imooc/pojo/Users.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-pojo/target/classes/com/imooc/pojo/UsersFans.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-pojo/target/classes/com/imooc/pojo/UsersLikeVideos.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-pojo/target/classes/com/imooc/pojo/UsersReport.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-pojo/target/classes/com/imooc/pojo/Videos.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-pojo/target/classes/com/imooc/pojo/vo/CommentsVO.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-pojo/target/classes/com/imooc/pojo/vo/PublisherVideo.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-pojo/target/classes/com/imooc/pojo/vo/UsersVO.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-pojo/target/classes/com/imooc/pojo/vo/VideosVO.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-pojo/target/imooc-videos-dev-pojo-0.0.1-SNAPSHOT.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-pojo/target/maven-archiver/pom.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-pojo/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-pojo/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-pojo/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-service/.classpath" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-service/.project" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-service/.settings/org.eclipse.core.resources.prefs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-service/.settings/org.eclipse.jdt.core.prefs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-service/.settings/org.eclipse.m2e.core.prefs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-service/.settings/org.springframework.ide.eclipse.prefs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-service/pom.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-service/src/main/java/com/imooc/service/BgmService.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-service/src/main/java/com/imooc/service/UserService.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-service/src/main/java/com/imooc/service/VideoService.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-service/src/main/java/com/imooc/service/impl/BgmServiceImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-service/src/main/java/com/imooc/service/impl/UserServiceImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-service/src/main/java/com/imooc/service/impl/VideoServiceImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-service/target/classes/META-INF/MANIFEST.MF" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-service/target/classes/META-INF/maven/com.imooc/imooc-videos-dev-service/pom.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-service/target/classes/META-INF/maven/com.imooc/imooc-videos-dev-service/pom.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-service/target/classes/com/imooc/service/BgmService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-service/target/classes/com/imooc/service/UserService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-service/target/classes/com/imooc/service/VideoService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-service/target/classes/com/imooc/service/impl/BgmServiceImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-service/target/classes/com/imooc/service/impl/UserServiceImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-service/target/classes/com/imooc/service/impl/VideoServiceImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-service/target/imooc-videos-dev-service-0.0.1-SNAPSHOT.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-service/target/maven-archiver/pom.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/imooc-videos-dev-service/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/mybatis-generatorConfig/.classpath" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/mybatis-generatorConfig/.factorypath" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/mybatis-generatorConfig/.project" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/mybatis-generatorConfig/.settings/org.eclipse.core.resources.prefs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/mybatis-generatorConfig/.settings/org.eclipse.jdt.apt.core.prefs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/mybatis-generatorConfig/.settings/org.eclipse.jdt.core.prefs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/mybatis-generatorConfig/.settings/org.eclipse.m2e.core.prefs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/mybatis-generatorConfig/.settings/org.eclipse.wst.common.project.facet.core.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/mybatis-generatorConfig/.springBeans" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/mybatis-generatorConfig/generatorConfig.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/mybatis-generatorConfig/pom.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/mybatis-generatorConfig/src/main/java/com/imooc/mapper/CommentsMapper.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/mybatis-generatorConfig/src/main/java/com/imooc/mybatis/utils/GeneratorDisplay.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/mybatis-generatorConfig/src/main/java/com/imooc/pojo/Comments.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/mybatis-generatorConfig/src/main/java/com/imooc/utils/MyMapper.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/mybatis-generatorConfig/src/main/resources/log4j.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/mybatis-generatorConfig/src/main/resources/mapper/CommentsMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/mybatis-generatorConfig/target/classes/META-INF/MANIFEST.MF" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/mybatis-generatorConfig/target/classes/META-INF/maven/com.imooc/mybatis-generatorConfig/pom.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/mybatis-generatorConfig/target/classes/META-INF/maven/com.imooc/mybatis-generatorConfig/pom.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/mybatis-generatorConfig/target/classes/com/imooc/mapper/CommentsMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/mybatis-generatorConfig/target/classes/com/imooc/mybatis/utils/GeneratorDisplay.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/mybatis-generatorConfig/target/classes/com/imooc/pojo/Comments.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/mybatis-generatorConfig/target/classes/com/imooc/utils/MyMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/mybatis-generatorConfig/target/classes/log4j.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/mybatis-generatorConfig/target/classes/mapper/CommentsMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/mybatis-generatorConfig/target/maven-archiver/pom.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/mybatis-generatorConfig/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/mybatis-generatorConfig/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/mybatis-generatorConfig/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/mybatis-generatorConfig/target/mybatis-generatorConfig-0.0.1-SNAPSHOT.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/mybatis-generatorConfig/target/mybatis-generatorConfig-0.0.1-SNAPSHOT.jar.original" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/videos-dev后端/pom.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/senup/miniprogram/controller/PostController.class" afterPath="$PROJECT_DIR$/target/classes/com/senup/miniprogram/controller/PostController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/senup/miniprogram/mapper/PostMapperCustom.class" afterPath="$PROJECT_DIR$/target/classes/com/senup/miniprogram/mapper/PostMapperCustom.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/senup/miniprogram/service/IPostServiceCustom.class" afterPath="$PROJECT_DIR$/target/classes/com/senup/miniprogram/service/IPostServiceCustom.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/senup/miniprogram/service/impl/PostServiceCustom.class" afterPath="$PROJECT_DIR$/target/classes/com/senup/miniprogram/service/impl/PostServiceCustom.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/com/senup/miniprogram/testMybatis.class" afterPath="$PROJECT_DIR$/target/test-classes/com/senup/miniprogram/testMybatis.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/miniprogram.iml" afterPath="$PROJECT_DIR$/miniprogram.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/senup/miniprogram/config/MybatisPlusConfig.java" afterPath="$PROJECT_DIR$/src/main/java/com/senup/miniprogram/config/MybatisPlusConfig.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/senup/miniprogram/controller/PostController.java" afterPath="$PROJECT_DIR$/src/main/java/com/senup/miniprogram/controller/PostController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/senup/miniprogram/mapper/PostMapperCustom.java" afterPath="$PROJECT_DIR$/src/main/java/com/senup/miniprogram/mapper/PostMapperCustom.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/senup/miniprogram/service/IPostServiceCustom.java" afterPath="$PROJECT_DIR$/src/main/java/com/senup/miniprogram/service/IPostServiceCustom.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/senup/miniprogram/service/impl/PostServiceCustom.java" afterPath="$PROJECT_DIR$/src/main/java/com/senup/miniprogram/service/impl/PostServiceCustom.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/xml/PostMapperCustom.xml" afterPath="$PROJECT_DIR$/src/main/resources/xml/PostMapperCustom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/senup/miniprogram/testMybatis.java" afterPath="$PROJECT_DIR$/src/test/java/com/senup/miniprogram/testMybatis.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/application.properties" afterPath="$PROJECT_DIR$/target/classes/application.properties" />
@@ -36,41 +392,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="PostMapperCustom.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/senup/miniprogram/mapper/PostMapperCustom.java">
+      <file leaf-file-name="testMybatis.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/senup/miniprogram/testMybatis.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IPostServiceCustom.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/senup/miniprogram/service/IPostServiceCustom.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="16" column="64" lean-forward="false" selection-start-line="16" selection-start-column="64" selection-end-line="16" selection-end-column="64" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MybatisPlusConfig.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/senup/miniprogram/config/MybatisPlusConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
-              <caret line="16" column="26" lean-forward="true" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PostServiceCustom.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/senup/miniprogram/service/impl/PostServiceCustom.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="26" column="1" lean-forward="false" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
+            <state relative-caret-position="682">
+              <caret line="46" column="24" lean-forward="false" selection-start-line="46" selection-start-column="24" selection-end-line="46" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -79,64 +405,23 @@
       <file leaf-file-name="PostMapperCustom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/xml/PostMapperCustom.xml">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1232">
+              <caret line="56" column="42" lean-forward="false" selection-start-line="56" selection-start-column="42" selection-end-line="56" selection-end-column="42" />
+              <folding>
+                <marker date="1587979689638" expanded="true" signature="2010:2255" ph="SELECT p.*,u... post" />
+                <marker date="1587979689638" expanded="true" signature="2334:2545" ph="SELECT p.*,u... post" />
+                <marker date="1587979689638" expanded="true" signature="2626:2871" ph="SELECT p.*,u... post" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ImgController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/senup/miniprogram/controller/ImgController.java">
+          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="308">
-              <caret line="35" column="8" lean-forward="false" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="8" />
-              <folding>
-                <marker date="1587977669623" expanded="true" signature="2010:2174" ph="SELECT p.*,u... post" />
-                <marker date="1587977669623" expanded="true" signature="2254:2465" ph="SELECT p.*,u... post" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="461">
-              <caret line="161" column="21" lean-forward="false" selection-start-line="161" selection-start-column="21" selection-end-line="161" selection-end-column="21" />
+              <caret line="60" column="29" lean-forward="true" selection-start-line="60" selection-start-column="29" selection-end-line="60" selection-end-column="29" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="356">
-              <caret line="35" column="44" lean-forward="true" selection-start-line="35" selection-start-column="44" selection-end-line="35" selection-end-column="44" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MineInterceptor.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/senup/miniprogram/config/MineInterceptor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-591">
-              <caret line="69" column="83" lean-forward="false" selection-start-line="69" selection-start-column="83" selection-end-line="69" selection-end-column="83" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PostController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/senup/miniprogram/controller/PostController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="413">
-              <caret line="65" column="0" lean-forward="false" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="testMybatis.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/senup/miniprogram/testMybatis.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
-              <folding>
-                <element signature="e#1818#1826#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -156,15 +441,16 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/java/com/senup/miniprogram/vo/PostVo.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/senup/miniprogram/entity/Post.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/senup/miniprogram/config/MybatisPlusConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/senup/miniprogram/utils/PagedResult.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/senup/miniprogram/mapper/PostMapperCustom.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/xml/PostMapperCustom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/senup/miniprogram/service/IPostServiceCustom.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/senup/miniprogram/service/impl/PostServiceCustom.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/senup/miniprogram/controller/PostController.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/senup/miniprogram/testMybatis.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/xml/PostMapperCustom.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/com/senup/miniprogram/config/MybatisPlusConfig.java" />
       </list>
     </option>
   </component>
@@ -187,9 +473,9 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="633" />
-    <option name="y" value="58" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="245" />
+    <option name="y" value="334" />
     <option name="width" value="1395" />
     <option name="height" value="1050" />
   </component>
@@ -228,7 +514,7 @@
     </navigator>
     <panes>
       <pane id="AndroidView" />
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -384,8 +670,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -413,7 +699,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.testMybatis.test1">
+  <component name="RunManager" selected="JUnit.testMybatis.test3">
     <configuration name="MiniprogramApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.senup.miniprogram.MiniprogramApplication" />
@@ -551,15 +837,42 @@
       <envs />
       <patterns />
     </configuration>
-    <list size="3">
+    <configuration name="testMybatis.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.senup.miniprogram.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="miniprogram" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.senup.miniprogram" />
+      <option name="MAIN_CLASS_NAME" value="com.senup.miniprogram.testMybatis" />
+      <option name="METHOD_NAME" value="test3" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="Spring Boot.MiniprogramApplication" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.testMybatis.test1" />
       <item index="2" class="java.lang.String" itemvalue="JUnit.testMybatis.test2" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.testMybatis.test3" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.testMybatis.test1" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.testMybatis.test2" />
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.testMybatis.test3" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.testMybatis.test1" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.testMybatis.test2" />
       </list>
     </recent_temporary>
   </component>
@@ -582,7 +895,9 @@
       <workItem from="1587804168327" duration="3172000" />
       <workItem from="1587809413556" duration="7188000" />
       <workItem from="1587950640491" duration="7405000" />
-      <workItem from="1587962401188" duration="8866000" />
+      <workItem from="1587962401188" duration="11124000" />
+      <workItem from="1587990130856" duration="2038000" />
+      <workItem from="1588326789884" duration="711000" />
     </task>
     <task id="LOCAL-00001" summary="没啥更改">
       <created>1587910119291</created>
@@ -595,9 +910,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="testMybatis_test1 - 2020.04.27 at 15h 25m 42s.xml">
-      <configuration name="testMybatis.test1" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="testMybatis_test1 - 2020.04.27 at 15h 30m 45s.xml">
       <configuration name="testMybatis.test1" configurationId="JUnit" />
     </history-entry>
@@ -625,12 +937,15 @@
     <history-entry file="testMybatis_test2 - 2020.04.27 at 15h 27m 57s.xml">
       <configuration name="testMybatis.test2" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="testMybatis_test3 - 2020.04.27 at 17h 51m 50s.xml">
+      <configuration name="testMybatis.test3" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29119000" />
+    <option name="totallyTimeSpent" value="34126000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="633" y="58" width="1395" height="1050" extended-state="0" />
+    <frame x="-9" y="-9" width="1938" height="1060" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Key Promoter X" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -649,16 +964,15 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43097642" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32996634" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="aiXcoder" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36179775" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32996634" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3632236" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3325766" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30582893" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22317597" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -666,6 +980,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32996634" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -685,19 +1000,71 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/senup/miniprogram/controller/PostController.java</url>
-          <line>60</line>
-          <properties />
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="4" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/senup/miniprogram/controller/PostController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1034">
+          <caret line="68" column="8" lean-forward="true" selection-start-line="68" selection-start-column="8" selection-end-line="68" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/xml/PostMapperCustom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1232">
+          <caret line="56" column="42" lean-forward="false" selection-start-line="56" selection-start-column="42" selection-end-line="56" selection-end-column="42" />
+          <folding>
+            <marker date="1587979689638" expanded="true" signature="2010:2255" ph="SELECT p.*,u... post" />
+            <marker date="1587979689638" expanded="true" signature="2334:2545" ph="SELECT p.*,u... post" />
+            <marker date="1587979689638" expanded="true" signature="2626:2871" ph="SELECT p.*,u... post" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/senup/miniprogram/service/IPostServiceCustom.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="19" column="47" lean-forward="true" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/senup/miniprogram/service/impl/PostServiceCustom.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="28" column="22" lean-forward="true" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/senup/miniprogram/service/impl/PostServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/senup/miniprogram/service/IPostService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="13" column="17" lean-forward="false" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/senup/miniprogram/testMybatis.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1122">
+          <caret line="66" column="40" lean-forward="true" selection-start-line="66" selection-start-column="40" selection-end-line="66" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/senup/miniprogram/mapper/PostMapperCustom.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
@@ -711,8 +1078,9 @@
         <state relative-caret-position="814">
           <caret line="37" column="8" lean-forward="false" selection-start-line="37" selection-start-column="8" selection-end-line="37" selection-end-column="8" />
           <folding>
-            <marker date="1587977669623" expanded="true" signature="2010:2174" ph="SELECT p.*,u... post" />
-            <marker date="1587977669623" expanded="true" signature="2254:2465" ph="SELECT p.*,u... post" />
+            <marker date="1587979689638" expanded="true" signature="2010:2255" ph="SELECT p.*,u... post" />
+            <marker date="1587979689638" expanded="true" signature="2334:2545" ph="SELECT p.*,u... post" />
+            <marker date="1587979689638" expanded="true" signature="2626:2871" ph="SELECT p.*,u... post" />
           </folding>
         </state>
       </provider>
@@ -818,8 +1186,9 @@
         <state relative-caret-position="198">
           <caret line="9" column="59" lean-forward="true" selection-start-line="9" selection-start-column="59" selection-end-line="9" selection-end-column="59" />
           <folding>
-            <marker date="1587977669623" expanded="true" signature="2010:2174" ph="SELECT p.*,u... post" />
-            <marker date="1587977669623" expanded="true" signature="2254:2465" ph="SELECT p.*,u... post" />
+            <marker date="1587979689638" expanded="true" signature="2010:2255" ph="SELECT p.*,u... post" />
+            <marker date="1587979689638" expanded="true" signature="2334:2545" ph="SELECT p.*,u... post" />
+            <marker date="1587979689638" expanded="true" signature="2626:2871" ph="SELECT p.*,u... post" />
           </folding>
         </state>
       </provider>
@@ -930,14 +1299,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/senup/miniprogram/controller/ImgController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="31" column="13" lean-forward="false" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/senup/miniprogram/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
@@ -946,71 +1307,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/senup/miniprogram/mapper/PostMapperCustom.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/senup/miniprogram/service/IPostServiceCustom.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="16" column="64" lean-forward="false" selection-start-line="16" selection-start-column="64" selection-end-line="16" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/senup/miniprogram/service/impl/PostServiceCustom.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="26" column="1" lean-forward="false" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/senup/miniprogram/controller/PostController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="65" column="0" lean-forward="false" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/senup/miniprogram/testMybatis.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
-          <folding>
-            <element signature="e#1818#1826#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/xml/PostMapperCustom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="35" column="8" lean-forward="false" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="8" />
-          <folding>
-            <marker date="1587977669623" expanded="true" signature="2010:2174" ph="SELECT p.*,u... post" />
-            <marker date="1587977669623" expanded="true" signature="2254:2465" ph="SELECT p.*,u... post" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="461">
           <caret line="161" column="21" lean-forward="false" selection-start-line="161" selection-start-column="21" selection-end-line="161" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="356">
-          <caret line="35" column="44" lean-forward="true" selection-start-line="35" selection-start-column="44" selection-end-line="35" selection-end-column="44" />
+          <caret line="35" column="44" lean-forward="false" selection-start-line="35" selection-start-column="44" selection-end-line="35" selection-end-column="44" />
           <folding />
         </state>
       </provider>
@@ -1025,8 +1332,92 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/senup/miniprogram/config/MybatisPlusConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="16" column="26" lean-forward="true" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+        <state relative-caret-position="154">
+          <caret line="7" column="2" lean-forward="false" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/senup/miniprogram/utils/PagedResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/senup/miniprogram/mapper/PostMapperCustom.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/senup/miniprogram/service/IPostService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="13" column="17" lean-forward="false" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/senup/miniprogram/service/IPostServiceCustom.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="19" column="47" lean-forward="false" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/senup/miniprogram/service/impl/PostServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/senup/miniprogram/service/impl/PostServiceCustom.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="28" column="22" lean-forward="false" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/senup/miniprogram/controller/PostController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1034">
+          <caret line="68" column="8" lean-forward="false" selection-start-line="68" selection-start-column="8" selection-end-line="68" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/senup/miniprogram/testMybatis.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="682">
+          <caret line="46" column="24" lean-forward="false" selection-start-line="46" selection-start-column="24" selection-end-line="46" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/xml/PostMapperCustom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1232">
+          <caret line="56" column="42" lean-forward="false" selection-start-line="56" selection-start-column="42" selection-end-line="56" selection-end-column="42" />
+          <folding>
+            <marker date="1587979689638" expanded="true" signature="2010:2255" ph="SELECT p.*,u... post" />
+            <marker date="1587979689638" expanded="true" signature="2334:2545" ph="SELECT p.*,u... post" />
+            <marker date="1587979689638" expanded="true" signature="2626:2871" ph="SELECT p.*,u... post" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/senup/miniprogram/controller/ImgController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="60" column="29" lean-forward="true" selection-start-line="60" selection-start-column="29" selection-end-line="60" selection-end-column="29" />
           <folding />
         </state>
       </provider>

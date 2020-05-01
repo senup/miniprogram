@@ -1,0 +1,40 @@
+<import src="/templates/public/public.wxml"></import>
+<view class="comment-box-placeholder" style="height:{{btnBottom+90}}rpx"></view>
+<view class="action-bar positioning-footer" style="padding-bottom:{{btnBottom+20}}rpx" wx:if="{{!editing}}">
+    <view catchtap="changeEditing" class="input-placeholder" style="{{type=='reply'?'width: 710rpx;':'width: 570rpx;'}}">
+    {{toUserName?'回复'+toUserName:'说点什么吧~'}}
+  </view>
+    <block wx:if="{{type!='reply'}}">
+        <button bindtap="onClickGood" class="btn-icon" data-like="{{like}}">
+            <text class="iconfont icon-good {{like?'active':''}}"></text>
+        </button>
+        <button class="btn-icon" openType="share">
+            <text class="iconfont icon-share"></text>
+        </button>
+    </block>
+</view>
+<view catchtap="changeEditing" class="transparent-shade" wx:else>
+    <view catchtap="false" class="comment-box positioning-footer" style="padding-bottom:{{btnBottom+20}}rpx">
+        <view class="comment-box-main">
+            <textarea autoHeight autoFocus="true" bindinput="inputComment" cursorSpacing="50" fixed="true" maxlength="140" placeholder="{{toUserName?'回复'+toUserName:'说点什么吧~'}}" value="{{inputValue}}"></textarea>
+            <view class="image-box" wx:if="{{submitImageUrl.length}}">
+                <image catchtap="previewImage" mode="widthFix" src="{{submitImageUrl[0]}}"></image>
+                <button catchtap="cancelImage" class="btn-close">
+                    <text class="iconfont icon-close"></text>
+                </button>
+            </view>
+        </view>
+        <view class="comment-box-footer">
+            <button catchtap="getPicture" class="btn-icon footer-icon">
+                <text class="iconfont icon-picture"></text>
+            </button>
+            <button catchtap="microphone" class="btn-icon footer-icon">
+                <text class="iconfont icon-microphone"></text>
+            </button>
+            <view class="comment-box-footer-right">
+                <template is="circularLoading" data wx:if="{{submitLoading}}"></template>
+                <button bindtap="clickSubmit" class="btn-submit" disabled="{{inputValue==''&&submitImageUrl.length==0||submitLoading}}">回复</button>
+            </view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,29 @@
+<view class="page_hd">
+    <image class="icon" src="{{baseImageUrl}}static/my/icon_aq.png"></image>
+    <view>信息安全保护中，未经用户允许绝不对外提供</view>
+</view>
+<view class="page_bd">
+    <view class="main-h1">认证权益</view>
+    <view class="main-h2">完成认证，即可在平台自由接单，并获得金V标识</view>
+    <view class="main-h3">
+        <text class="iconfont icon-warning"></text>未完成身份认证用户，仅可发布需求，不得接单</view>
+    <view bindtap="goSubmitInfo" class="card-container" wx:if="{{state==1}}">
+        <view class="card-container-title">
+      实名认证
+      <view class="btn-right">
+                <text class="iconfont icon-arrow-right"></text>
+            </view>
+        </view>
+        <view class="card-container-label">需要进行身份认证</view>
+    </view>
+    <view class="card-container" wx:if="{{state==2}}">
+        <view class="card-container-title">
+      已提交认证中
+    </view>
+        <view class="card-container-label">如需加急请联系我们</view>
+    </view>
+</view>
+<view class="page_ft">
+    <view>请保证你本人的信息真实有效</view>
+    <view>虚假信息认证会对你的信用评估造成影响</view>
+</view>

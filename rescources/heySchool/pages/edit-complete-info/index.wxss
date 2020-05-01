@@ -1,0 +1,64 @@
+.cell {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 40rpx;
+    padding: 40rpx 0;
+    border-bottom: 2rpx solid #e6e6e6;
+}
+
+.cell-avatar {
+    padding: 10rpx 0;
+}
+
+.avatar {
+    width: 90rpx;
+    height: 90rpx;
+    border-radius: 50%;
+}
+
+.cell>view:first-of-type {
+    min-width: 200rpx;
+    font-size: 30rpx;
+}
+
+.cell>view:nth-of-type(2) {
+    position: relative;
+    flex-grow: 1;
+    font-size: 30rpx;
+    text-align: right;
+    color: #999;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.can-edit {
+    color: #000!important;
+}
+
+.icon-arrow-right {
+    margin-left: 10rpx;
+    color: #ccc;
+    font-size: 36rpx;
+}
+
+.gender-image {
+    position: absolute;
+    top: 8rpx;
+    right: 78rpx;
+    width: 30rpx;
+    height: 30rpx;
+}
+
+.icon-warning {
+    font-size: 28rpx;
+    color: #ccc;
+    margin-right: 10rpx;
+}
+
+.tip {
+    margin: 20rpx 40rpx;
+    color: #999;
+    font-size: 24rpx;
+}

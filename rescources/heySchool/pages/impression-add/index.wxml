@@ -1,0 +1,24 @@
+<view class="page_hd">
+    <image class="user-avatar" mode="aspectFit" src="{{toUserInfo.avatarUrl}}"></image>
+    <view class="user-nickname">{{toUserInfo.nickname}}</view>
+    <view class="user-collegemsg">{{toUserInfo.college}}{{toUserInfo.grade}}级</view>
+</view>
+<view class="page_bd">
+    <view class="title">我对TA的印象</view>
+    <view class="title-note">最多添加3个印象</view>
+    <view class="tag-area">
+        <view bindtap="onItemClick" class="tag {{item.cls}}" data-content="{{item.content}}" data-index="{{index}}" wx:for="{{recommendImpressionList}}" wx:key="content">
+            <text class="tag-text">{{item.content}}</text>
+        </view>
+    </view>
+    <view class="tag-area-add-custom">
+        <view class="tag tag-custom {{expandAddCustonBtn?'':'btn-add-custom-pre'}}">
+            <text bindtap="onClickAddCustom" class="tag-text" wx:if="{{!expandAddCustonBtn}}">+自定义</text>
+            <input bindinput="onAddCustonTagInput" class="tag-text tag-input-add-custom" maxlength="10" wx:if="{{expandAddCustonBtn}}"></input>
+            <text bindtap="onClickAddCustomSubmit" class="tag-text tag-input-add-custom-submit" wx:if="{{expandAddCustonBtn}}">添加</text>
+        </view>
+    </view>
+    <view>
+        <button bindtap="onClickSubmit" class="btn-block" disabled="{{selectedImpression.length==0}}">提交</button>
+    </view>
+</view>

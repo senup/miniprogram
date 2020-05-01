@@ -1,0 +1,54 @@
+<view class="page_bd">
+    <view class="form-item">
+        <view class="form-title">
+            <image src="/images/edit/nickname.png"></image>
+            <view>昵称</view>
+        </view>
+        <view class="form-input">
+            <input bindinput="inputNickName" maxlength="10" placeholder="请输入您的昵称" placeholderClass="form-input-placeholder" value="{{nickName}}"></input>
+        </view>
+    </view>
+    <view class="form-item">
+        <view class="form-title">
+            <image src="/images/edit/school.png"></image>
+            <view>学校</view>
+        </view>
+        <view class="form-input">
+            <view bindtap="toSelectSchool" class="select-school">
+                <view class="form-input-placeholder" wx:if="{{!college}}">请选择所在学校</view>
+                <view>{{college}}</view>
+                <text class="iconfont icon-drop-down"></text>
+            </view>
+        </view>
+    </view>
+    <view class="form-item">
+        <view class="form-title">
+            <image src="/images/edit/enter-time.png"></image>
+            <view>入学年份</view>
+        </view>
+        <view class="form-input">
+            <picker bindchange="bindDateChange" fields="year" mode="date" value="{{enrollYear}}">
+                <view class="form-input-placeholder" wx:if="{{!enrollYear}}">请选择入学年份</view>
+                <view>{{enrollYear}}</view>
+                <text class="iconfont icon-drop-down"></text>
+            </picker>
+        </view>
+    </view>
+    <view class="form-item">
+        <view class="form-title">
+            <image src="/images/edit/female.png"></image>
+            <view>性别</view>
+        </view>
+        <view class="form-select">
+            <view bindtap="selectFemale" class="{{sex=='0'?'active':''}}" data-sex="0">
+                <image src="{{sex=='0'?'/images/edit/man-selected.png':'/images/edit/man-not-select.png'}}"></image>
+                <view>男生</view>
+            </view>
+            <view bindtap="selectFemale" class="{{sex=='1'?'active':''}}" data-sex="1">
+                <image src="{{sex=='1'?'/images/edit/women-selected.png':'/images/edit/women-not-select.png'}}"></image>
+                <view>女生</view>
+            </view>
+        </view>
+    </view>
+    <button bindtap="submitForm" class="btn-block" disabled="{{nickName==''||college==''||enrollYear==''||sex==''}}">完成</button>
+</view>

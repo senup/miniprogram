@@ -1,0 +1,93 @@
+<template name="msgItem">
+    <mp-cells extClass="msg-cell">
+        <mp-cell>
+            <view>取件地点</view>
+            <view class="msg-cell_footer" slot="footer">
+                <input bindinput="setPickUplocation" data-index="{{index}}" maxlength="40" placeholder="请输入文字" placeholderClass="input-placeholder" value="{{startAddress}}"></input>
+                <picker bindchange="setPickUpLocationPicker" data-index="{{index}}" range="{{recentAddress}}">
+                    <text class="iconfont icon-drop-down"></text>
+                </picker>
+            </view>
+        </mp-cell>
+        <mp-cell>
+            <view>送达地点</view>
+            <view class="msg-cell_footer" slot="footer">
+                <input bindinput="setDeliveryLocation" data-index="{{index}}" maxlength="40" placeholder="请输入文字" placeholderClass="input-placeholder" value="{{endAddress}}"></input>
+                <picker bindchange="setDeliveryLocationPicker" data-index="{{index}}" range="{{recentAddress}}">
+                    <text class="iconfont icon-drop-down"></text>
+                </picker>
+            </view>
+        </mp-cell>
+        <mp-cell>
+            <view>取件信息</view>
+            <view>
+                <textarea bindinput="setDeliveryDetail" class="weui-textarea" data-index="{{index}}" maxlength="140" placeholder="该信息仅自己和接单人可见，请准确填写取件码、快递公司等...(限140个字节)" placeholderClass="input-placeholder" value="{{message}}"></textarea>
+            </view>
+        </mp-cell>
+        <view class="btn-group">
+            <button capture-catch:tap="deleteDelivery" class="btn-remove" data-index="{{index}}" wx:if="{{info.length!=1}}">
+                <text class="iconfont icon-delete"></text> 删除
+      </button>
+            <button capture-catch:tap="insertDelivery" class="btn-add" wx:if="{{index==info.length-1}}">+ 添加快递</button>
+        </view>
+    </mp-cells>
+</template>
+<view class="page_hd">
+    <view class="weui-navbar">
+        <view bindtap="tabClick" class="weui-navbar__item {{tabCurrent==index?'weui-navbar__item_on':''}}" id="{{index}}" wx:for="{{tabList}}" wx:key="index">
+        {{item}}
+      </view>
+        <view class="weui-navbar__slider" style="transform: translateX({{sliderOffset}}px); -webkit-transform: translateX({{sliderOffset}}px);"></view>
+    </view>
+</view>
+<view class="page_bd">
+    <mp-cells>
+        <mp-cell>
+            <view>姓名</view>
+            <view slot="footer">
+                <input bindinput="inputName" maxlength="10" placeholder="请输入姓名" placeholderClass="input-placeholder" value="{{name}}"></input>
+            </view>
+        </mp-cell>
+        <mp-cell>
+            <view>电话</view>
+            <view slot="footer">
+                <input bindinput="inputPhone" maxlength="11" placeholder="请输入电话" placeholderClass="input-placeholder" type="number" value="{{phoneNumber}}"></input>
+            </view>
+        </mp-cell>
+    </mp-cells>
+    <block wx:if="{{tabCurrent==0}}">
+        <mp-cells>
+            <mp-cell>
+                <view>快递件数</view>
+                <view slot="footer">
+                    <view>{{info.length}}</view>
+                </view>
+            </mp-cell>
+        </mp-cells>
+        <template is="msgItem" data="{{...item,index:index,info:info}}" wx:for="{{info}}" wx:key="{{index}}"></template>
+    </block>
+    <mp-cells wx:else>
+        <mp-cell>
+            <view>任务描述</view>
+            <textarea autoHeight bindinput="setDescribe" class="other-textarea" holdKeyboard="{{true}}" maxlength="140" placeholder="请输入相关任务详情...(限定140个字节)" placeholderClass="input-placeholder" value="{{describe}}" wx:if="{{!showPreview}}"></textarea>
+            <my-uploader bind:ispreview="getShowPreview" bind:updata="updataImageList" maxCount="9"></my-uploader>
+        </mp-cell>
+    </mp-cells>
+    <view class="bounty-cell">
+        <view class="bounty-cell_title">
+            <view class="bounty-cell_title-content">赏金</view>
+            <view class="bounty-cell_title-tip">给勤劳的小蜜蜂一点肯定</view>
+        </view>
+        <view class="bounty-cell_footer">
+            <input bindinput="inputBounty" class="bounty-cell_footer-input" maxlength="10" placeholder="最低三元起" placeholderClass="input-placeholder" placeholderStyle="font-size:32rpx;padding-top: 6rpx;" type="digit" value="{{bounty}}"></input>
+            <view class="bounty-cell_footer-label">元</view>
+        </view>
+    </view>
+    <view class="bounty-tip" wx:if="{{tabCurrent==1}}">
+        <text class="iconfont icon-warning"></text>如涉及代购物品等任务，接单同学先垫付代购金额
+  </view>
+</view>
+<view class="page_ft-placeholder"></view>
+<cover-view class="page_ft" wx:if="{{!showPreview}}">
+    <button bindtap="onClickSubmit" class="btn-block" disabled="{{!submitFlag}}">下单</button>
+</cover-view>

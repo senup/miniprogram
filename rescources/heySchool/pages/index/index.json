@@ -1,0 +1,9 @@
+{
+    "usingComponents": {
+        "tab-bar": "/components/tabBar/tabBar",
+        "card-list": "/components/cardList/cardList",
+        "modal-register": "/components/modalRegister/modalRegister",
+        "modal-coupon": "/components/modalCoupon/modalCoupon"
+    },
+    "enablePullDownRefresh": true
+}

@@ -1,0 +1,13 @@
+<view class="page_hd">
+    <image class="logo" src="/images/public/logo.png"></image>
+    <view class="title">HeyU</view>
+    <button bindgetuserinfo="onGotUserInfo" class="btn-block" openType="getUserInfo">微信授权</button>
+</view>
+<view class="page_ft">
+    <text>HeyU校园需要您的微信授权，点击授权按钮即代表您接受我们的</text>
+    <text catchtouchend="hiddenXY" catchtouchstart="showXY" class="focus">用户协议</text>
+    <text>。</text>
+</view>
+<view class="tip" hidden="{{isXYHidden}}">
+HeyU校园小程序需要您的微信授权。我们将获取您的微信昵称、头像及您微信所绑定的手机号码作为基础注册信息，您可以在选择校区后完善账号信息并查看任务详情，个人信息等。您的信息我们将妥善保存并严格保密。
+</view>
