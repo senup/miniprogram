@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.senup.wxapp.mapper.CommentMapperCustom">
+
+    <resultMap id="CommentDetailMap" type="com.senup.wxapp.vo.CommentVo">
+        <id column="id" property="id"></id>
+        <result column="user_id" property="userId"></result>
+        <result column="art_id" property="artId"></result>
+        <result column="create_time" property="createTime"></result>
+        <result column="comment_msg" property="commentMsg"></result>
+        <result column="like_counts" property="likeCounts"></result>
+        <association property="user" javaType="com.senup.wxapp.entity.User">
+            <id column="user_id" property="id"></id>
+            <result column="nick_name" property="nickName"></result>
+            <result column="avatar_url" property="avatarUrl"></result>
+            <result column="gender" property="gender"></result>
+            <result column="follow_counts" property="followCounts"></result>
+            <result column="fans_counts" property="fansCounts"></result>
+            <result column="receive_like_counts" property="receiveLikeCounts"></result>
+            <result column="create_time" property="createTime"></result>
+            <result column="grade" property="grade"></result>
+            <result column="intro" property="intro"></result>
+            <result column="college" property="college"></result>
+        </association>
+    </resultMap>
+
+    <select id="getCommentListById" parameterType="integer" resultMap="CommentDetailMap">
+        select  comment.*,
+            user.id ,
+            user.nick_name,
+            user.avatar_url,
+            user.gender,
+            user.follow_counts,
+            user.fans_counts,
+            user.receive_like_counts,
+            user.grade,
+            user.intro,
+            user.college
+        from comment
+        left join user on comment.user_id = user.id
+        where 1=1
+        <if test="artId !=null and artId !=''  ">
+            and comment.art_id = #{artId}
+        </if>
+        order by comment.create_time asc
+    </select>
+
+
+</mapper>
