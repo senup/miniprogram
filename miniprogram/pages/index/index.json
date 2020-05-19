@@ -1,7 +1,0 @@
-{
-  "usingComponents": {
-    "tab-bar": "/components/tabBar/tabBar",
-    "card-list": "/components/cardList/cardList"
-  },
-  "enablePullDownRefresh": true
-}

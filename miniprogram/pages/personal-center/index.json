@@ -1,7 +1,0 @@
-{
-    "usingComponents": {
-        "card-list": "/components/cardList/cardList",
-        "heartbeat": "/components/heartbeat/heartbeat"
-    },
-    "enablePullDownRefresh": true
-}

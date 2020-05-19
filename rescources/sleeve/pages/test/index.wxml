@@ -1,3 +1,0 @@
-<l-popup content-align="bottom" show="true">
-    <view style="background-color: green;width:600rpx;height:500rpx;"></view>
-</l-popup>

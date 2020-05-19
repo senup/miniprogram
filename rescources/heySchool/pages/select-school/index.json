@@ -1,8 +1,0 @@
-{
-    "navigationBarTitleText": "选择所在学校",
-    "usingComponents": {
-        "my-searchbar": "../../components/searchbar/searchbar",
-        "mp-cells": "../../weui-miniprogram/cells/cells",
-        "mp-cell": "../../weui-miniprogram/cell/cell"
-    }
-}

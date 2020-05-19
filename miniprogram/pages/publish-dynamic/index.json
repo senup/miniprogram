@@ -1,8 +1,0 @@
-{
-    "navigationBarTitleText": "发布动态",
-    "usingComponents": {
-        "my-uploader": "../../components/uploader/uploader",
-        "mp-cells": "../../weui-miniprogram/cells/cells",
-        "mp-cell": "../../weui-miniprogram/cell/cell"
-    }
-}
